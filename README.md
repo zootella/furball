@@ -1,4 +1,0 @@
-furball
-=======
-
-A puzzle game
