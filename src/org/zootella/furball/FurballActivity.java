@@ -26,6 +26,8 @@ public class FurballActivity extends Activity {
 	
 	private RelativeLayout layout;
 	
+	private int boardx, boardy;
+	
 	@Override
 	public void onWindowFocusChanged(boolean hasFocus) {
 		
@@ -37,8 +39,8 @@ public class FurballActivity extends Activity {
 
 			int limit = Math.min(w, h);//find the smallest dimension
 			square = limit / boardSize;//size of each square
-			int boardx = (w - (square * boardSize)) / 2;
-			int boardy = (h - (square * boardSize)) / 2;
+			boardx = (w - (square * boardSize)) / 2;
+			boardy = (h - (square * boardSize)) / 2;
 
 			int x = boardx + (10 * square);
 			int y = boardy + (10 * square);
@@ -77,8 +79,8 @@ public class FurballActivity extends Activity {
 		puck = new ImageView(this);
 		puck.setBackgroundColor(Color.BLUE);
 		RelativeLayout.LayoutParams p = new RelativeLayout.LayoutParams(square, square);//w, h
-		p.leftMargin = 0;//x
-		p.topMargin = 0;//y
+		p.leftMargin = boardx;//x
+		p.topMargin = boardy;//y
 		layout.addView(puck, p);
 		
 		
@@ -139,8 +141,8 @@ public class FurballActivity extends Activity {
 		pucky = y;
 		
 		RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams)puck.getLayoutParams();
-        params.leftMargin = square * puckx;
-        params.topMargin = square * pucky;
+        params.leftMargin = boardx + (square * puckx);
+        params.topMargin = boardy + (square * pucky);
         params.rightMargin = square;
         params.bottomMargin = square;
         puck.setLayoutParams(params);
