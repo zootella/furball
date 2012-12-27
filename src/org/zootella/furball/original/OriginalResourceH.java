@@ -6,6 +6,7 @@ public class OriginalResourceH {
 	//Microsoft Developer Studio generated include file.
 	//Used by Furball.rc
 	//
+	/*
 	#define IDD_QUICKHELP                   135
 	#define IDD_ENTERCODE                   136
 	#define IDD_ABOUT                       149
@@ -47,9 +48,11 @@ public class OriginalResourceH {
 	#define IDM_DEMON                       40037
 	#define IDM_LION                        40038
 	#define IDM_MAD                         40039
+	*/
 	
 	//Next default values for new objects
 	//
+	/*
 	#ifdef APSTUDIO_INVOKED
 	#ifndef APSTUDIO_READONLY_SYMBOLS
 	#define _APS_NEXT_RESOURCE_VALUE        164
@@ -58,4 +61,5 @@ public class OriginalResourceH {
 	#define _APS_NEXT_SYMED_VALUE           101
 	#endif
 	#endif
+	*/
 }

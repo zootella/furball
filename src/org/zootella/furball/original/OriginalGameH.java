@@ -30,6 +30,7 @@ public class OriginalGameH {
 	
 	/* FUNCTIONS IN GAME.C */
 	
+	/*
 	void initialize(int startinglevel);
 	void loadlevel(int level);
 	void saveboard();
@@ -47,6 +48,7 @@ public class OriginalGameH {
 	void drawboard();
 	void drawwindow();
 	void updateboard();
+	*/
 	
 	/**********************************************************/
 	/* end of file game.h                                     */

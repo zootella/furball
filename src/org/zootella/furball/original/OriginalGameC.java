@@ -58,21 +58,23 @@ public class OriginalGameC {
 	 * Furball currently in play.
 	 */
 	
-	/* EXTERNAL INCLUDE STATEMENTS */
+	// EXTERNAL INCLUDE STATEMENTS */
 	
+	/*
 	#include <windows.h>
 	#include "resource.h"
 	
-	/* INTERNAL INCLUDE STATEMENTS */
+	// INTERNAL INCLUDE STATEMENTS */
 	
+	/*
 	#include "levels.h"
 	#include "furball.h"
 	#include "game.h"
 	
-	/* GAME GLOBAL VARIABLES */
+	// GAME GLOBAL VARIABLES */
 	
-	tile board[BOARDROWS][BOARDCOLS];
-	tile prevboard[BOARDROWS][BOARDCOLS];
+	Tile board[][];
+	Tile prevboard[][];
 	int currentlevel, lives;
 	
 	/********************************************/
@@ -96,22 +98,22 @@ public class OriginalGameC {
 	 * MainWindowProcedure.
 	 */
 	
-	void initialize(int startinglevel)
-	{
-		/* SET THE STARTING LEVEL AND INITIAL LIVES */
+	void initialize(int startinglevel) {
+		
+		// SET THE STARTING LEVEL AND INITIAL LIVES */
 	
 		currentlevel = startinglevel;
-		lives = LIVESATSTART;
+		lives = Define.LIVESATSTART;
 	
-		/* SETUP THE BOARD AND PREVIOUSBOARD ARRAYS */
+		// SETUP THE BOARD AND PREVIOUSBOARD ARRAYS */
 	
 		loadlevel(currentlevel);
 		saveboard();
 	
-		/* DRAW THE WINDOW AND START THE MUSIC */
+		// DRAW THE WINDOW AND START THE MUSIC */
 	
 		drawwindow();
-		jukebox(PLAY);
+		jukebox(MusicCommand.PLAY);
 	}
 	
 	/********************************************/
@@ -142,8 +144,8 @@ public class OriginalGameC {
 	{
 		int row, col;
 	
-		for (row = 0; row <= (BOARDROWS - 1); row++)
-			for (col = 0; col <= (BOARDCOLS - 1); col++)
+		for (row = 0; row <= (Define.BOARDROWS - 1); row++)
+			for (col = 0; col <= (Define.BOARDCOLS - 1); col++)
 				board[row][col] = levelbank[level][row][col];
 	}
 	
@@ -169,8 +171,8 @@ public class OriginalGameC {
 	{
 		int row, col;
 	
-		for (row = 0; row <= (BOARDROWS - 1); row++)
-			for (col = 0; col <= (BOARDCOLS - 1); col++)
+		for (row = 0; row <= (Define.BOARDROWS - 1); row++)
+			for (col = 0; col <= (Define.BOARDCOLS - 1); col++)
 				prevboard[row][col] = board[row][col];
 	}
 	
@@ -302,21 +304,21 @@ public class OriginalGameC {
 	 * MainWindowProcedure to get the next message.
 	 */
 	
-	void movefurball(direction givendir)
+	void movefurball(Direction givendir)
 	{
 		int arow, acol, brow, bcol, crow, ccol;
-		tile atile, btile, ctile;
-		tiletype atype, btype, ctype;
+		Tile atile, btile, ctile;
+		TileType atype, btype, ctype;
 	
-		/* CHECK THE DAY STATE BEFORE EACH MOVE */
+		// CHECK THE DAY STATE BEFORE EACH MOVE */
 	
 		checkdaystate();
 	
-		/* LOAD THE CURRENT POSITION OF THE FURBALL INTO AROW AND ACOL */
+		// LOAD THE CURRENT POSITION OF THE FURBALL INTO AROW AND ACOL */
 	
 		findfurball(&arow, &acol);
 	
-		/* COMPUTE THE COORDINATES OF B AND C FROM THE GIVEN DIRECTION */
+		// COMPUTE THE COORDINATES OF B AND C FROM THE GIVEN DIRECTION */
 	
 		switch (givendir) {
 	
@@ -350,7 +352,7 @@ public class OriginalGameC {
 	
 		}
 	
-		/* FIND THE THREE TILES AND TYPES */
+		// FIND THE THREE TILES AND TYPES */
 	
 		atile = whatsat(arow, acol);
 		btile = whatsat(brow, bcol);
@@ -360,42 +362,42 @@ public class OriginalGameC {
 		btype = gettype(btile);
 		ctype = gettype(ctile);
 	
-		/* CASE 1: THE DESTINATION TILE IS BLOCKING */
+		// CASE 1: THE DESTINATION TILE IS BLOCKING */
 	
-		if (btype == BLOCKING) {
+		if (btype == TileType.BLOCKING) {
 	
-			/* THE FURBALL CANNOT PASS, DO NOTHING */
+			// THE FURBALL CANNOT PASS, DO NOTHING */
 	
 			return;
 	
 		}
 	
-		/* CASE 2: THE DESTINATION TILE IS PASSING */
+		// CASE 2: THE DESTINATION TILE IS PASSING */
 	
-		if (btype == PASSING) {
+		if (btype == TileType.PASSING) {
 	
-			/* BACKUP THE BOARD BEFORE CHANGING IT */
+			// BACKUP THE BOARD BEFORE CHANGING IT */
 	
 			saveboard();
 	
-			/* PLAY A SOUND EFFECT IF APPROPRIATE */
+			// PLAY A SOUND EFFECT IF APPROPRIATE */
 	
-			if (btile == HEART)
-				soundeffect(GETHEART);
+			if (btile == Tile.HEART)
+				soundeffect(SoundTitle.GETHEART);
 	
-			/* MAKE THE MOVE */
+			// MAKE THE MOVE */
 	
-			if (atile == FBONGRASS)
-				board[arow][acol] = GRASS;
+			if (atile == Tile.FBONGRASS)
+				board[arow][acol] = Tile.GRASS;
 			else
-				board[arow][acol] = SINK;
+				board[arow][acol] = Tile.SINK;
 	
-			if (btile == SINK)
-				board[brow][bcol] = FBONSINK;
+			if (btile == Tile.SINK)
+				board[brow][bcol] = Tile.FBONSINK;
 			else
-				board[brow][bcol] = FBONGRASS; // MOVED ONTO GRASS OR HEART
+				board[brow][bcol] = Tile.FBONGRASS; // MOVED ONTO GRASS OR HEART
 	
-			/* UPDATE THE SCREEN AND RUN CHECKS ON THE NEW BOARD */
+			// UPDATE THE SCREEN AND RUN CHECKS ON THE NEW BOARD */
 	
 			runchecks();
 			updateboard();
@@ -403,25 +405,25 @@ public class OriginalGameC {
 	
 		}
 	
-		/* CASE 3: THE FURBALL WILL MOVE INTO THE OPEN DOOR */
+		// CASE 3: THE FURBALL WILL MOVE INTO THE OPEN DOOR */
 	
-		if (btype == FINISHING) {
+		if (btype == TileType.FINISHING) {
 	
-			/* BACKUP THE BOARD BEFORE CHANGING IT */
+			// BACKUP THE BOARD BEFORE CHANGING IT */
 	
 			saveboard();
 	
-			/* MAKE THE MOVE */
+			// MAKE THE MOVE */
 	
-			if (atile == FBONGRASS)
-				board[arow][acol] = GRASS;
+			if (atile == Tile.FBONGRASS)
+				board[arow][acol] = Tile.GRASS;
 	
-			if (atile == FBONSINK)
-				board[arow][acol] = SINK;
+			if (atile == Tile.FBONSINK)
+				board[arow][acol] = Tile.SINK;
 	
-			board[brow][bcol] = DOOROPEN;
+			board[brow][bcol] = Tile.DOOROPEN;
 	
-			/* UPDATE THE SCREEN AND COMPLETE THE LEVEL */
+			// UPDATE THE SCREEN AND COMPLETE THE LEVEL */
 	
 			updateboard();
 			finishedlevel();
@@ -429,45 +431,45 @@ public class OriginalGameC {
 	
 		}
 	
-		/* CASE 4: THE DESTINATION TILE IS PUSHABLE */
+		// CASE 4: THE DESTINATION TILE IS PUSHABLE */
 	
-		if (btype == PUSHABLE) {
+		if (btype == TileType.PUSHABLE) {
 	
-			/* MAKE SURE THE SPACE BEHIND THE BOX IS CLEAR */
+			// MAKE SURE THE SPACE BEHIND THE BOX IS CLEAR */
 	
-			if (ctype != PASSING)
+			if (ctype != TileType.PASSING)
 				return;  // THE MOVE IS NOT POSSIBLE, DO NOTHING
 	
-			/* BACKUP THE BOARD BEFORE CHANGING IT */
+			// BACKUP THE BOARD BEFORE CHANGING IT */
 	
 			saveboard();
 			
-			/* PLAY A SOUND EFFECT IF APPROPRIATE */
+			// PLAY A SOUND EFFECT IF APPROPRIATE */
 	
-			if (ctile == HEART)
-				soundeffect(GETHEART);
+			if (ctile == Tile.HEART)
+				soundeffect(SoundTitle.GETHEART);
 			
-			if (ctile == SINK)
-				soundeffect(BOXSINK);
+			if (ctile == Tile.SINK)
+				soundeffect(SoundTitle.BOXSINK);
 	
-			/* MAKE THE MOVE */
+			// MAKE THE MOVE */
 	
-			if (atile == FBONGRASS)
-				board[arow][acol] = GRASS;
+			if (atile == Tile.FBONGRASS)
+				board[arow][acol] = Tile.GRASS;
 			else
-				board[arow][acol] = SINK;
+				board[arow][acol] = Tile.SINK;
 	
-			if (btile == BOXONGRASS)
-				board[brow][bcol] = FBONGRASS;
+			if (btile == Tile.BOXONGRASS)
+				board[brow][bcol] = Tile.FBONGRASS;
 			else
-				board[brow][bcol] = FBONSINK;
+				board[brow][bcol] = Tile.FBONSINK;
 	
-			if (ctile == SINK)
-				board[crow][ccol] = BOXONSINK;
+			if (ctile == Tile.SINK)
+				board[crow][ccol] = Tile.BOXONSINK;
 			else
-				board[crow][ccol] = BOXONGRASS;
+				board[crow][ccol] = Tile.BOXONGRASS;
 	
-			/* UPDATE THE SCREEN AND RUN CHECKS ON THE NEW BOARD */
+			// UPDATE THE SCREEN AND RUN CHECKS ON THE NEW BOARD */
 	
 			runchecks();
 			updateboard();
@@ -542,70 +544,70 @@ public class OriginalGameC {
 		int opendoor, heartsleft, uncoveredsinks;
 		int row, col;
 		int doorrow, doorcol, fbrow, fbcol, searchrow, searchcol;
-		tiledanger found;
+		TileDanger found;
 	
-		/* CHECK 1: OPEN OR CLOSE THE DOOR IF NECESSARY */
+		// CHECK 1: OPEN OR CLOSE THE DOOR IF NECESSARY */
 	
-		/* GATHER INFORMATION ABOUT THE BOARD */
+		// GATHER INFORMATION ABOUT THE BOARD */
 	
 		opendoor = 0;
 		heartsleft = 0;
 		uncoveredsinks = 0;
 	
-		for (row = 0; row <= (BOARDROWS - 1); row++) {
-			for (col = 0; col <= (BOARDCOLS - 1); col++) {
+		for (row = 0; row <= (Define.BOARDROWS - 1); row++) {
+			for (col = 0; col <= (Define.BOARDCOLS - 1); col++) {
 	
-				if (board[row][col] == DOORCLOSED) {
+				if (board[row][col] == Tile.DOORCLOSED) {
 					doorrow = row;
 					doorcol = col;
 				}
-				if (board[row][col] == DOOROPEN) {
+				if (board[row][col] == Tile.DOOROPEN) {
 					doorrow = row;
 					doorcol = col;
 					opendoor++;
 				}
-				if (board[row][col] == HEART) {
+				if (board[row][col] == Tile.HEART) {
 					heartsleft++;
 				}
-				if (board[row][col] == SINK) {
+				if (board[row][col] == Tile.SINK) {
 					uncoveredsinks++;
 				}
-				if (board[row][col] == FBONSINK) {
+				if (board[row][col] == Tile.FBONSINK) {
 					uncoveredsinks++;
 				}
 				
 			}
 		}
 	
-		/* THE DOOR IS LOCKED AND SHOULD BE OPENED */
+		// THE DOOR IS LOCKED AND SHOULD BE OPENED */
 	
 		if (opendoor == 0 && heartsleft == 0 && uncoveredsinks == 0) {
 	
-			board[doorrow][doorcol] = DOOROPEN;
-			soundeffect(DOOROPENS);
+			board[doorrow][doorcol] = Tile.DOOROPEN;
+			soundeffect(SoundTitle.DOOROPENS);
 	
 		}
 	
-		/* THE DOOR IS OPEN AND SHOULD BE SHUT */
+		// THE DOOR IS OPEN AND SHOULD BE SHUT */
 	
 		if (opendoor != 0 && (heartsleft != 0 || uncoveredsinks != 0)) {
 	
-			board[doorrow][doorcol] = DOORCLOSED;
+			board[doorrow][doorcol] = Tile.DOORCLOSED;
 	
 		}
 	
-		/* CHECK 2: SEE IF THE FURBALL'S PRESENT LOCATION IS SAFE */
+		// CHECK 2: SEE IF THE FURBALL'S PRESENT LOCATION IS SAFE */
 	
-		/* LOCATE THE FURBALL */
+		// LOCATE THE FURBALL */
 	
 		findfurball(&fbrow, &fbcol);
 	
-		/* SEARCH FOR DANGER IN EACH DIRECTION */
+		// SEARCH FOR DANGER IN EACH DIRECTION */
 	
 		searchrow = fbrow;
 		searchcol = fbcol;
 	
-		while (1) {
+		while (true) {
 			searchrow++;
 			found = getdanger(whatsat(searchrow, searchcol));
 			if (found == SAFE) {
@@ -765,7 +767,7 @@ public class OriginalGameC {
 	{
 		BOOL foundinvalid;
 	
-		/* IF THE GIVEN ROW OR COL IS INVALID, RETURN OUTSIDE */
+		// IF THE GIVEN ROW OR COL IS INVALID, RETURN OUTSIDE */
 	
 		foundinvalid = FALSE;
 	
@@ -777,7 +779,7 @@ public class OriginalGameC {
 		if (foundinvalid)
 			return (OUTSIDE);
 	
-		/* THE COORDINATES ARE VALID, RETURN THE TILE */
+		// THE COORDINATES ARE VALID, RETURN THE TILE */
 	
 		return (board[row][col]);
 	}
@@ -915,33 +917,33 @@ public class OriginalGameC {
 	
 	void killfurball()
 	{
-		/* DISPLAY THE LETHAL BOARD */
+		// DISPLAY THE LETHAL BOARD */
 	
 		updateboard();
 	
-		/* PLAY A SOUND EFFECT */
+		// PLAY A SOUND EFFECT */
 	
 		soundeffect(KILL);
 	
-		/* HAVE THE PROGRAM PAUSE FOR A MOMENT */
+		// HAVE THE PROGRAM PAUSE FOR A MOMENT */
 	
 		Sleep(SLEEPMILLI);
 	
-		/* IF NO LIVES REMAIN, END THE GAME */
+		// IF NO LIVES REMAIN, END THE GAME */
 	
 		if (lives == 0)
 			gameover();
 	
-		/* OTHERWISE, DECRIMENT THE NUMBER OF LIVES */
+		// OTHERWISE, DECRIMENT THE NUMBER OF LIVES */
 	
 		lives--;
 	
-		/* RESET AND RESTART THE CURRENT LEVEL */
+		// RESET AND RESTART THE CURRENT LEVEL */
 	
 		loadlevel(currentlevel);
 		saveboard();
 	
-		/* DRAW THE WINDOW AND START THE MUSIC */
+		// DRAW THE WINDOW AND START THE MUSIC */
 	
 		drawwindow();
 		jukebox(PLAY);
@@ -971,31 +973,31 @@ public class OriginalGameC {
 	
 	void finishedlevel()
 	{
-		/* PLAY A SOUND EFFECT */
+		// PLAY A SOUND EFFECT */
 	
 		soundeffect(LEVELDONE);
 	
-		/* HAVE THE PROGRAM PAUSE FOR A MOMENT */
+		// HAVE THE PROGRAM PAUSE FOR A MOMENT */
 	
 		Sleep(SLEEPMILLI);
 	
-		/* IF THIS IS THE LAST LEVEL, THE GAME HAS BEEN WON */
+		// IF THIS IS THE LAST LEVEL, THE GAME HAS BEEN WON */
 	
 		if (currentlevel == NUMLEVELS - 1) {
 			gamewon();
 			return;
 		}
 	
-		/* OTHERWISE, MOVE ON TO THE NEXT LEVEL */
+		// OTHERWISE, MOVE ON TO THE NEXT LEVEL */
 	
 		currentlevel++;
 	
-		/* SETUP THE NEXT LEVEL */
+		// SETUP THE NEXT LEVEL */
 		
 		loadlevel(currentlevel);
 		saveboard();
 	
-		/* DRAW THE WINDOW AND START THE MUSIC */
+		// DRAW THE WINDOW AND START THE MUSIC */
 	
 		drawwindow();
 		jukebox(PLAY);

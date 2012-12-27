@@ -31,6 +31,7 @@ public class OriginalFurballH {
 	/* FUNCTIONS IN FURBALL.C */
 	
 	// (no declaration needed for winmain)
+	/*
 	LRESULT CALLBACK MainWindowProcedure(HWND hWnd, UINT uiMessage, WPARAM wParam, LPARAM lParam);
 	
 	void wasresized();
@@ -65,6 +66,7 @@ public class OriginalFurballH {
 	
 	void checkdaystate();
 	daystate getlight();
+	*/
 	
 	/**********************************************************/
 	/* end of file furball.h                                  */

@@ -92,18 +92,18 @@ public class OriginalFurballC {
 	HWND hWnd;				// THE HANDLE TO THE APPLICATION WINDOW
 	*/
 	
-	HBITMAP fbongrass, fbongrassn; // HOLDERS FOR THE BITMAPS
-	HBITMAP fbonsink, fbonsinkn;
-	HBITMAP boxongrass, boxongrassn;
-	HBITMAP boxonsink, boxonsinkn;
-	HBITMAP rock, rockn;
-	HBITMAP wall, walln;
-	HBITMAP enemy, enemyn;
-	HBITMAP grass, grassn;
-	HBITMAP sink, sinkn;
-	HBITMAP heart, heartn;
-	HBITMAP doorclosed, doorclosedn;
-	HBITMAP dooropen, dooropenn;
+	Bitmap fbongrass, fbongrassn; // HOLDERS FOR THE BITMAPS
+	Bitmap fbonsink, fbonsinkn;
+	Bitmap boxongrass, boxongrassn;
+	Bitmap boxonsink, boxonsinkn;
+	Bitmap rock, rockn;
+	Bitmap wall, walln;
+	Bitmap enemy, enemyn;
+	Bitmap grass, grassn;
+	Bitmap sink, sinkn;
+	Bitmap heart, heartn;
+	Bitmap doorclosed, doorclosedn;
+	Bitmap dooropen, dooropenn;
 	
 	/* REGISTRY GLOBAL VARIABLES */
 	
@@ -113,8 +113,8 @@ public class OriginalFurballC {
 	
 	/* GAME GLOBAL VARIABLES */
 	
-	extern int currentlevel;
-	daystate currentdaystate;
+	int currentlevel;
+	DayState currentdaystate;
 	
 	/********************************************/
 	/* WIN MAIN                                 */
@@ -169,26 +169,32 @@ public class OriginalFurballC {
 	 * program was run with.
 	 */
 	
-	int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
-					   PSTR szCmdLine, int iCmdShow)
-	{
+	public int WinMain() {
+
+		/*
 		MSG        msg;
 		WNDCLASSEX wndclass;
 		HICON      hIcon;
+		*/
 		int        desxpos, desypos;
 		int        deswinwidth, deswinheight;
 	
 		/* SAVE THE INSTANCE NUMBER IN A GLOBAL VARIABLE */
 	
+		/*
 		hgInstance = hInstance;
+		*/
 	
 		/* LOAD THE APPLICATION ICON */
 	
+		/*
 		hIcon = LoadImage(hInstance, "APPICON", IMAGE_ICON, 16, 16, LR_DEFAULTCOLOR);
 		if (hIcon == (HICON)NULL) MessageBox(hWnd, "The icon could not be loaded.", APPNAMELONG, MB_OK);
+		*/
 	
 		/* LOAD THE GAME TILE BITMAPS */
 	
+		/*
 		fbongrass   = LoadImage(hInstance, "FBONGRASS",   IMAGE_BITMAP, TILESIZE, TILESIZE, LR_DEFAULTCOLOR);
 		fbongrassn  = LoadImage(hInstance, "FBONGRASSN",  IMAGE_BITMAP, TILESIZE, TILESIZE, LR_DEFAULTCOLOR);
 		fbonsink    = LoadImage(hInstance, "FBONSINK",    IMAGE_BITMAP, TILESIZE, TILESIZE, LR_DEFAULTCOLOR);
@@ -238,9 +244,11 @@ public class OriginalFurballC {
 		if (doorclosedn == (HBITMAP)NULL) MessageBox(hWnd, "A bitmap could not be loaded.", APPNAMELONG, MB_OK);
 		if (dooropen    == (HBITMAP)NULL) MessageBox(hWnd, "A bitmap could not be loaded.", APPNAMELONG, MB_OK);
 		if (dooropenn   == (HBITMAP)NULL) MessageBox(hWnd, "A bitmap could not be loaded.", APPNAMELONG, MB_OK);
+		*/
 	
 		/* REGISTER THE CLASS FOR THE MAIN WINDOW */
 	
+		/*
 		wndclass.cbSize			= sizeof(wndclass);						// SIZE OF THIS STRUCTURE
 		wndclass.style			= 0;									// SYTLE
 		wndclass.lpfnWndProc	= MainWindowProcedure;					// WINDOW PROCEDURE TO CALL
@@ -255,9 +263,11 @@ public class OriginalFurballC {
 		wndclass.hIconSm		= hIcon;								// SMALL ICON
 	
 		RegisterClassEx(&wndclass);
+		*/
 	
 		/* COMPUTE VALUES FOR THE DESIRED WINDOW DIMENSIONS */
 	
+		/*
 		deswinwidth  = BCOLPIX
 			+ 2 * GetSystemMetrics(SM_CXFRAME)
 			+ 2 * TDBORDER;
@@ -266,18 +276,22 @@ public class OriginalFurballC {
 			+ 2 * TDBORDER
 			+ GetSystemMetrics(SM_CYCAPTION)
 			+ 2 * GetSystemMetrics(SM_CYMENU);
+			*/
 	
 		/* FIND THE DESIRED CENTERED WINDOW POSITION */
 	
+		/*
 		desxpos = (GetSystemMetrics(SM_CXFULLSCREEN) / 2)
 			- (deswinwidth  / 2);
 	
 		desypos = ((GetSystemMetrics(SM_CYFULLSCREEN)
 			+ GetSystemMetrics(SM_CYCAPTION)) / 2)
 			- (deswinheight / 2);
+			*/
 	
 		/* CREATE THE MAIN WINDOW */
 	
+		/*
 		hWnd = CreateWindow(
 			APPNAME,				// REGISTERED CLASS NAME
 			APPNAMELONG,			// TEXT DISPLAYED IN TITLE BAR
@@ -290,12 +304,15 @@ public class OriginalFurballC {
 			NULL,					// MENU
 			hInstance,				// APPLICATION INSTANCE
 			NULL);					// ADDITIONAL WINDOW DATA
+			*/
 	
 		/* GET INFORMATION FROM THE REGISTRY */
 	
+		/*
 		setupregvar("RegSound", &soundeffectson,     DEFAULTSOUNDINT);
 		setupregvar("RegHelp",  &startuphelp,        DEFAULTHELPINT );
 		setupregvar("RegMusic", &currentmusicoption, DEFAULTMUSICINT);
+		*/
 	
 		/* INITIALIZE THE GAME BEFORE DISPLAYING THE WINDOW */
 	
@@ -304,16 +321,21 @@ public class OriginalFurballC {
 	
 		/* SHOW THE MAIN WINDOW AS REQUESTED BY WINDOWS AND PAINT IT */
 	
+		/*
 		ShowWindow(hWnd, iCmdShow);
 		UpdateWindow(hWnd);
+		*/
 	
 		/* DISPLAY THE QUICK HELP DIALOG IF REQUESTED */
 	
+		/*
 		if (startuphelp)
 			menuquickhelp();
+			*/
 	
 		/* ENTER THE MESSAGE LOOP */
 	
+		/*
 		while (GetMessage(&msg, NULL, 0, 0)) {
 	
 			TranslateMessage(&msg);
@@ -322,6 +344,7 @@ public class OriginalFurballC {
 		}
 	
 		return msg.wParam;
+		*/
 	}
 	
 	/********************************************/
@@ -388,21 +411,21 @@ public class OriginalFurballC {
 	 * used back to Windows.
 	 */
 	
-	LRESULT CALLBACK MainWindowProcedure(HWND hWnd, UINT uiMessage,
-										 WPARAM wParam, LPARAM lParam)
-	{
+	/*
+	LRESULT CALLBACK MainWindowProcedure(HWND hWnd, UINT uiMessage, WPARAM wParam, LPARAM lParam) {
+		
 		PAINTSTRUCT ps;
 		HDC	hDC;
 	
 		switch (uiMessage) {
 	
-			/* THE WINDOW IS BEING RESIZED */
+			// THE WINDOW IS BEING RESIZED
 	
 			case WM_SIZE:
 				wasresized();
 				return (0);
 	
-			/* WINDOWS IS ABOUT TO DISPLAY THE MENU */
+			// WINDOWS IS ABOUT TO DISPLAY THE MENU
 	
 			case WM_INITMENUPOPUP:
 	
@@ -411,13 +434,13 @@ public class OriginalFurballC {
 	
 				break;
 	
-			/* THE USER CLICKED ON A MENU ITEM */
+			// THE USER CLICKED ON A MENU ITEM
 	
 			case WM_COMMAND:
 	
 				switch (LOWORD(wParam)) {
 	
-					/* GAME MENU */
+					// GAME MENU
 	
 					case IDM_NEWGAME:        menunewgame();        break;
 					case IDM_GIVEUP:         menugiveup();         break;
@@ -425,7 +448,7 @@ public class OriginalFurballC {
 					case IDM_EXIT:           menuexit();           break;
 					case IDM_SOUNDEFFECTS:   menusoundeffects();   break;
 	
-					/* OPTIONS MENU */
+					// OPTIONS MENU
 	
 					case IDM_NOMUSIC:
 						writeregvar("RegMusic", &currentmusicoption, (int)NOMUSIC);
@@ -500,7 +523,7 @@ public class OriginalFurballC {
 						jukebox(PLAY);
 						break;
 	
-					/* HELP MENU */
+					// HELP MENU
 	
 					case IDM_QUICKHELP:      menuquickhelp();      break;
 					case IDM_ABOUT:          menuabout();          break;
@@ -509,7 +532,7 @@ public class OriginalFurballC {
 	
 				return (0);
 	
-			/* THE USER PRESSED A KEY ON THE KEYBOARD */
+			// THE USER PRESSED A KEY ON THE KEYBOARD
 	
 			case WM_KEYDOWN:
 	
@@ -524,7 +547,7 @@ public class OriginalFurballC {
 	
 				break;
 	
-			/* WINDOWS WANTS THE PROGRAM TO REPAINT THE WINDOW */
+			// WINDOWS WANTS THE PROGRAM TO REPAINT THE WINDOW
 	
 			case WM_PAINT:
 	
@@ -534,7 +557,7 @@ public class OriginalFurballC {
 	
 				return (0);
 	
-			/* CLOSE THE APPLICATION */
+			// CLOSE THE APPLICATION
 	
 			case WM_DESTROY:
 	
@@ -544,11 +567,11 @@ public class OriginalFurballC {
 	
 			}
 	
-		/* IF A MESSAGE MAKES IT HERE, I DON'T CARE ABOUT IT,
-		   PASS IT ON TO WINDOWS */
+		// IF A MESSAGE MAKES IT HERE, I DON'T CARE ABOUT IT, PASS IT ON TO WINDOWS
 	
 		return DefWindowProc(hWnd, uiMessage, wParam, lParam);
 	}
+	*/
 	
 	/********************************************/
 	/* WAS RESIZED                              */
@@ -608,19 +631,20 @@ public class OriginalFurballC {
 	 * slow computer, so it appears to the user that the autosize 
 	 * and painting happens simultaneously.
 	 */
-	
-	void wasresized()
-	{
+
+	/*
+	void wasresized() {
+		
 		RECT clientrect;
 		BOOL isbigenough;
 		int deswinwidth, deswinheight;
 		int desxpos, desypos;
 	
-		/* FIND OUT HOW BIG THE NEWLY RESIZED CLIENT AREA IS */
+		// FIND OUT HOW BIG THE NEWLY RESIZED CLIENT AREA IS
 	
 		GetClientRect(hWnd,	&clientrect);
 	
-		/* FIND OUT IF THE CLIENT AREA IS BIG ENOUGH */
+		// FIND OUT IF THE CLIENT AREA IS BIG ENOUGH
 		
 		isbigenough = TRUE;
 	
@@ -631,20 +655,20 @@ public class OriginalFurballC {
 			+ (2 * TDBORDER)))
 			isbigenough = FALSE;
 	
-		/* CASE 1: THE WINDOW IS BIG ENOUGH */
+		// CASE 1: THE WINDOW IS BIG ENOUGH
 	
 		if (isbigenough) {
 	
-			/* HAVE THE SYSTEM SEND A MESSAGE TO REPAINT THE WINDOW */
+			// HAVE THE SYSTEM SEND A MESSAGE TO REPAINT THE WINDOW
 	
 			InvalidateRect(hWnd, NULL, TRUE);
 			UpdateWindow(hWnd);
 	
-		/* CASE 2: THE WINDOW IS TOO SMALL */
+		// CASE 2: THE WINDOW IS TOO SMALL
 	
 		} else {
 	
-			/* COMPUTE VALUES FOR THE DESIRED WINDOW DIMENSIONS */
+			// COMPUTE VALUES FOR THE DESIRED WINDOW DIMENSIONS
 		
 			deswinwidth  = BCOLPIX
 				+ 2 * GetSystemMetrics(SM_CXFRAME)
@@ -655,7 +679,7 @@ public class OriginalFurballC {
 				+ GetSystemMetrics(SM_CYCAPTION)
 				+ 2 * GetSystemMetrics(SM_CYMENU);
 		
-			/* FIND THE DESIRED CENTERED WINDOW POSITION */
+			// FIND THE DESIRED CENTERED WINDOW POSITION
 		
 			desxpos = (GetSystemMetrics(SM_CXFULLSCREEN) / 2)
 				- (deswinwidth  / 2);
@@ -664,7 +688,7 @@ public class OriginalFurballC {
 				+ GetSystemMetrics(SM_CYCAPTION)) / 2)
 				- (deswinheight / 2);
 	
-			/* MOVE AND RESIZE THE WINDOW */
+			// MOVE AND RESIZE THE WINDOW
 	
 			MoveWindow(
 				hWnd,			// HANDLE OF WINDOW
@@ -676,6 +700,7 @@ public class OriginalFurballC {
 	
 		}
 	}
+	*/
 	
 	/********************************************/
 	/* DRAW TILE                                */
@@ -741,17 +766,18 @@ public class OriginalFurballC {
 	 * graphics services needed by the program.
 	 */
 	
-	void drawtile(tile tilename, int xgrid, int ygrid)
-	{
+	void drawtile(Tile tilename, int xgrid, int ygrid) {
+		
+		/*
 		HDC hDC, hDCMemory;
 		RECT clientrect;
 		int xcenterspace, ycenterspace, xoffset, yoffset, xdrawat, ydrawat;
 	
-		/* SETUP THE HDC FOR THIS FUNCTION */
+		// SETUP THE HDC FOR THIS FUNCTION
 	
 		hDC = GetDC(hWnd);
 	
-		/* FIND THE SIZE OF THE CLIENT AREA ABOVE THE STATUS BAR */
+		// FIND THE SIZE OF THE CLIENT AREA ABOVE THE STATUS BAR
 	
 		GetClientRect(hWnd, &clientrect);
 		
@@ -761,17 +787,17 @@ public class OriginalFurballC {
 			- GetSystemMetrics(SM_CYMENU)
 			- 2 * TDBORDER;
 	
-		/* COMPUTE THE BOARD OFFSET FROM THIS INFORMATION */
+		// COMPUTE THE BOARD OFFSET FROM THIS INFORMATION
 		
 		xoffset = (xcenterspace / 2) - (BCOLPIX / 2) + TDBORDER;
 		yoffset = (ycenterspace / 2) - (BROWPIX / 2) + TDBORDER;
 	
-		/* FIND THE LOCATION TO DRAW THE TILE AT */
+		// FIND THE LOCATION TO DRAW THE TILE AT
 	
 		xdrawat = xoffset + (xgrid * TILESIZE);
 		ydrawat = yoffset + (ygrid * TILESIZE);
 	
-		/* DRAW THE SPECIFIED TILE AT THE CORRECT LOCATION */
+		// DRAW THE SPECIFIED TILE AT THE CORRECT LOCATION
 		
 		hDCMemory = CreateCompatibleDC(hDC);
 	
@@ -815,9 +841,10 @@ public class OriginalFurballC {
 			0, 0, SRCCOPY);
 		DeleteDC(hDCMemory);
 	
-		/* FREE THE MEMORY OF THE HDC USED BY THIS FUNCTION */
+		// FREE THE MEMORY OF THE HDC USED BY THIS FUNCTION
 	
 		ReleaseDC(hWnd, hDC);
+		*/
 	}
 	
 	/********************************************/
@@ -881,33 +908,34 @@ public class OriginalFurballC {
 	 * function is freed, and the function exits.
 	 */
 	
-	void statusbar(int currentlevel, int lives)
-	{
+	void statusbar(int currentlevel, int lives) {
+		
+		/*
 		HDC hDC;
 		RECT statusbarrect, clientrect, borderrect, statusborder;
 		HFONT hFont;
 		char statustext[MAXSTRINGLENGTH];
 	
-		/* SETUP THE HDC FOR THIS FUNCTION */
+		// SETUP THE HDC FOR THIS FUNCTION
 	
 		hDC = GetDC(hWnd);
 	
-		/* FIND THE SIZE OF THE CLIENT AREA */
+		// FIND THE SIZE OF THE CLIENT AREA
 	
 		GetClientRect(hWnd, &clientrect);
 		
-		/* SETUP THE RECTANGLE STRUCTURE FOR THE STATUS BAR */
+		// SETUP THE RECTANGLE STRUCTURE FOR THE STATUS BAR
 	
 		statusbarrect.left   = 0;
 		statusbarrect.right  = clientrect.right;
 		statusbarrect.top    = clientrect.bottom - GetSystemMetrics(SM_CYMENU); 
 		statusbarrect.bottom = clientrect.bottom;
 	
-		/* DRAW THE RECTANGULAR REGION OF THE STATUS BAR */
+		// DRAW THE RECTANGULAR REGION OF THE STATUS BAR
 	
 		FillRect(hDC, &statusbarrect, (HBRUSH)(COLOR_3DFACE + 1));
 	
-		/* DRAW THE LARGE INNER 3-D BORDER FOR THE WINDOW */
+		// DRAW THE LARGE INNER 3-D BORDER FOR THE WINDOW
 	
 		borderrect.left = 0;
 		borderrect.right = clientrect.right;
@@ -917,7 +945,7 @@ public class OriginalFurballC {
 		DrawEdge(hDC, &borderrect,
 			BDR_SUNKENOUTER | BDR_SUNKENINNER, BF_RECT);
 	  
-		/* DRAW THE STATUS BAR 3-D BORDER */
+		// DRAW THE STATUS BAR 3-D BORDER
 	
 		statusborder.left = 0;
 		statusborder.right = clientrect.right;
@@ -928,7 +956,7 @@ public class OriginalFurballC {
 	
 		DrawEdge(hDC, &statusborder, BDR_SUNKENOUTER, BF_RECT);
 	
-		/* ASSEMBLE THE TEXT OF THE STATUS BAR */
+		// ASSEMBLE THE TEXT OF THE STATUS BAR
 	
 		wsprintf(statustext,
 			"Level: %d    Lives Remaining: %d    Level Code: %s",
@@ -936,7 +964,7 @@ public class OriginalFurballC {
 			lives,					  // SHOW THE NUMBER OF LIVES LEFT
 			levelcode[currentlevel]); // LOOK UP THE LEVEL CODE
 	
-		/* DRAW THE TEXT OF THE STATUS BAR */
+		// DRAW THE TEXT OF THE STATUS BAR
 	
 		hFont = (HFONT)GetStockObject(DEFAULT_GUI_FONT);
 		hFont = SelectObject(hDC, hFont);
@@ -949,9 +977,10 @@ public class OriginalFurballC {
 			statustext,				// SHOW THE PREPARED STRING
 			lstrlen(statustext));	// FIND AND REPORT ITS LENGTH
 	  
-		/* FREE THE MEMORY OF THE HDC USED BY THIS FUNCTION */
+		// FREE THE MEMORY OF THE HDC USED BY THIS FUNCTION
 	
 		ReleaseDC(hWnd, hDC);
+		*/
 	}
 	
 	/********************************************/
@@ -975,14 +1004,15 @@ public class OriginalFurballC {
 	 * being played.
 	 */
 	
-	void soundeffect(soundtitle sound)
-	{
-		/* IF THE SOUND EFFECTS ARE OFF, LEAVE NOW */
+	void soundeffect(SoundTitle sound) {
+
+		/*
+		// IF THE SOUND EFFECTS ARE OFF, LEAVE NOW
 	
 		if (!soundeffectson)
 			return;
 	
-		/* PLAY THE REQUESTED SOUND EFFECT */
+		// PLAY THE REQUESTED SOUND EFFECT
 	
 		if (currentdaystate == DAY) { // IT IS DAY
 	
@@ -1033,8 +1063,8 @@ public class OriginalFurballC {
 					break;
 	
 			}
-	
 		}
+		*/
 	}
 	
 	/********************************************/
@@ -1105,8 +1135,9 @@ public class OriginalFurballC {
 	 * from game.c.
 	 */
 	
-	void jukebox(musiccommand command)
-	{
+	void jukebox(MusicCommand command) {
+		
+		/*
 		int songnum;
 	
 		switch (command) {
@@ -1190,6 +1221,7 @@ public class OriginalFurballC {
 				break;
 	
 		}
+		*/
 	}
 	
 	/********************************************/
@@ -1214,13 +1246,14 @@ public class OriginalFurballC {
 	 * song filename is "FBDAT03.FBD" and not just "BOND.MID".
 	 */
 	
-	void playsong(music songname)
-	{
-		/* STOP PLAYING ALL MUSIC */
+	void playsong(Music songname) {
+		
+		/*
+		// STOP PLAYING ALL MUSIC
 	
 		jukebox(STOP);
 	
-		/* PLAY THE REQUESTED SONG ONCE */
+		// PLAY THE REQUESTED SONG ONCE
 	
 		switch (songname) {
 	
@@ -1243,6 +1276,7 @@ public class OriginalFurballC {
 			case THRONE:   playmidi(hWnd, "FBDAT17.FBD"); break;
 	
 		}
+		*/
 	}
 	
 	/********************************************/
@@ -1267,8 +1301,9 @@ public class OriginalFurballC {
 	 * sure of exactly how it works.
 	 */
 	
-	DWORD playmidi(HWND hWndNotify, LPSTR lpszMIDIFileName)
-	{
+	/*
+	DWORD playmidi(HWND hWndNotify, LPSTR lpszMIDIFileName) {
+		
 	    UINT wDeviceID;
 	    DWORD dwReturn;
 	    MCI_OPEN_PARMS mciOpenParms;
@@ -1276,7 +1311,7 @@ public class OriginalFurballC {
 	    MCI_STATUS_PARMS mciStatusParms;
 	    MCI_SEQ_SET_PARMS mciSeqSetParms;
 	
-	    /* OPEN THE DEVICE AND FILE */
+	    // OPEN THE DEVICE AND FILE
 	
 	    mciOpenParms.lpstrDeviceType = "sequencer";
 	    mciOpenParms.lpstrElementName = lpszMIDIFileName;
@@ -1285,17 +1320,17 @@ public class OriginalFurballC {
 	        MCI_OPEN_TYPE | MCI_OPEN_ELEMENT,
 	        (DWORD)(LPVOID) &mciOpenParms)) {
 	
-	        /* FAILED TO OPEN DEVICE, REPORT ERROR */
+	        // FAILED TO OPEN DEVICE, REPORT ERROR
 	
 	    	return (dwReturn);
 	    
 		}
 	
-	    /* THE DEVICE OPENED SUCCESSFULLY, GET THE DEVICE ID */
+	    // THE DEVICE OPENED SUCCESSFULLY, GET THE DEVICE ID
 	    
 		wDeviceID = mciOpenParms.wDeviceID;
 	
-	    /* CHECK IF THE OUTPUT PORT IS THE MIDI MAPPER */
+	    // CHECK IF THE OUTPUT PORT IS THE MIDI MAPPER
 	    
 		mciStatusParms.dwItem = MCI_SEQ_STATUS_PORT;
 	    
@@ -1307,7 +1342,7 @@ public class OriginalFurballC {
 	
 	    }
 	
-	    /* BEGIN PLAYBACK */
+	    // BEGIN PLAYBACK
 	
 	    mciPlayParms.dwCallback = (DWORD) hWndNotify;
 	
@@ -1321,6 +1356,7 @@ public class OriginalFurballC {
 	
 	    return (0L);
 	}
+	*/
 	
 	/********************************************/
 	/* STOP MIDI                                */
@@ -1340,10 +1376,12 @@ public class OriginalFurballC {
 	 * currently running MIDI song.
 	 */
 	
+	/*
 	void stopmidi()
 	{
 		mciSendCommand(MCI_ALL_DEVICE_ID, MCI_CLOSE, MCI_WAIT, NULL);
 	}
+	*/
 	
 	/********************************************/
 	/* PREPARE OPTIONS MENU                     */
@@ -1376,22 +1414,23 @@ public class OriginalFurballC {
 	 * does not blink on after a moment of initialization.
 	 */
 	
-	void prepareoptionsmenu()
-	{
+	void prepareoptionsmenu() {
+		
+		/*
 		HMENU hMenu;
 	
-		/* GET A HANDLE TO THE MENU ON THE MAIN WINDOW */
+		// GET A HANDLE TO THE MENU ON THE MAIN WINDOW
 	
 		hMenu = GetMenu(hWnd);
 	
-		/* CHECK OR UNCHECK THE SOUND EFFECTS MENU OPTION */
+		// CHECK OR UNCHECK THE SOUND EFFECTS MENU OPTION
 	
 		if (soundeffectson)
 			CheckMenuItem(hMenu, IDM_SOUNDEFFECTS, MF_CHECKED);
 		else
 			CheckMenuItem(hMenu, IDM_SOUNDEFFECTS, MF_UNCHECKED);
 	
-		/* CHECK OR UNCHECK ALL THE MUSIC OPTIONS */
+		// CHECK OR UNCHECK ALL THE MUSIC OPTIONS
 	
 		if (currentmusicoption == NOMUSIC)
 			CheckMenuItem(hMenu, IDM_NOMUSIC, MF_CHECKED);
@@ -1482,6 +1521,7 @@ public class OriginalFurballC {
 			CheckMenuItem(hMenu, IDM_MAD, MF_CHECKED);
 		else
 			CheckMenuItem(hMenu, IDM_MAD, MF_UNCHECKED);
+			*/
 	}
 	
 	/********************************************/
@@ -1516,11 +1556,9 @@ public class OriginalFurballC {
 	 * currently running game at all.
 	 */
 	
-	void menunewgame()
-	{
-		int response;
-	
-		response = MessageBox(hWnd, NEWGAMETEXT, "New Game", MB_OKCANCEL);
+	void menunewgame() {
+		
+		int response = MessageBox(hWnd, NEWGAMETEXT, "New Game", MB_OKCANCEL);
 	
 		if (response == IDOK) // THE USER PRESSED OK TO CLEAR THE BOX
 			initialize(INITIALSTARTINGLEVEL);
@@ -1544,8 +1582,8 @@ public class OriginalFurballC {
 	 * resetting the level are carried out.
 	 */
 	
-	void menugiveup()
-	{
+	void menugiveup() {
+		
 		killfurball();
 	}
 	
@@ -1571,10 +1609,9 @@ public class OriginalFurballC {
 	 * located within the dialog procedure.
 	 */
 	
-	void menuenterlevelcode()
-	{
-		DialogBox(hgInstance, MAKEINTRESOURCE(IDD_ENTERCODE), hWnd,
-			(DLGPROC)dplevelcode);
+	void menuenterlevelcode() {
+		
+		DialogBox(hgInstance, MAKEINTRESOURCE(IDD_ENTERCODE), hWnd, (DLGPROC)dplevelcode);
 	}
 	
 	/********************************************/
@@ -1606,9 +1643,9 @@ public class OriginalFurballC {
 	 * simply immediately cleared.
 	 */
 	
-	BOOL CALLBACK dplevelcode(HWND hDlg, UINT message, WPARAM wParam,
-							  LPARAM lParam)
-	{
+	BOOL CALLBACK dplevelcode(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam) {
+		
+		/*
 		char inputstring[MAXSTRINGLENGTH];
 		int codevalid;
 	
@@ -1616,11 +1653,11 @@ public class OriginalFurballC {
 	
 			case WM_INITDIALOG: // THE DIALOG IS ABOUT TO BE DISPLAYED
 	
-				/* MAKE THE TEXT BOX BLANK */
+				// MAKE THE TEXT BOX BLANK
 	
 				SetDlgItemText(hDlg, IDC_LEVELCODE,	"");
 				
-				/* SET THE FOCUS TO THE TEXT BOX */
+				// SET THE FOCUS TO THE TEXT BOX
 				
 				SetFocus(GetDlgItem(hDlg, IDC_LEVELCODE));
 				return (FALSE);
@@ -1631,21 +1668,21 @@ public class OriginalFurballC {
 	
 					case IDOK: // THE USER PRESSED OK
 	
-						/* GET THE STRING THAT WAS ENTERED */
+						// GET THE STRING THAT WAS ENTERED
 	
 						GetDlgItemText(hDlg, IDC_LEVELCODE,	inputstring,
 							MAXSTRINGLENGTH);
 						
-						/* PROCESS THE ENTERED STRING */
+						// PROCESS THE ENTERED STRING
 	
 						codevalid = lookuplevelcode(inputstring);
 	
-						/* IF THE CODE WAS VALID, CLOSE THE DIALOG */
+						// IF THE CODE WAS VALID, CLOSE THE DIALOG
 	
 						if (codevalid)
 							EndDialog(hDlg, TRUE);
 	
-						/* CODE INVALID, KEEP DIALOG, RESET FOCUS */
+						// CODE INVALID, KEEP DIALOG, RESET FOCUS
 				
 						SetFocus(GetDlgItem(hDlg, IDC_LEVELCODE));
 	
@@ -1654,7 +1691,7 @@ public class OriginalFurballC {
 					
 					case IDCANCEL:
 						
-						/* CLOSE THE DIALOG */
+						// CLOSE THE DIALOG
 	
 						EndDialog(hDlg, FALSE);
 						return (FALSE);
@@ -1671,6 +1708,7 @@ public class OriginalFurballC {
 		}
 	
 		return (FALSE);
+		*/
 	}
 	
 	/********************************************/
@@ -1709,17 +1747,17 @@ public class OriginalFurballC {
 	 * value of 0, indicating that the level code was not valid.
 	 */
 	
-	int lookuplevelcode(char *inputstring)
-	{
+	int lookuplevelcode(String inputstring) {
+		
 		int levelscan;
 	
 		for (levelscan = 0; levelscan <= (NUMLEVELS - 1); levelscan++) {
 	
-			/* COMPARE THE INPUT STRING WITH THE TABLE OF CODES */
+			// COMPARE THE INPUT STRING WITH THE TABLE OF CODES
 	
 			if (lstrcmp(inputstring, levelcode[levelscan]) == 0) {
 	
-				/* MATCH FOUND, GO TO THE DESIRED LEVEL, REPORT SUCCESS */
+				// MATCH FOUND, GO TO THE DESIRED LEVEL, REPORT SUCCESS
 				
 				initialize(levelscan);
 				return (1);
@@ -1728,7 +1766,7 @@ public class OriginalFurballC {
 	
 		}
 	
-		/* THE ENTERED STRING COULD NOT BE MATCHED TO A CODE */
+		// THE ENTERED STRING COULD NOT BE MATCHED TO A CODE
 		
 		MessageBox(hWnd, INVALIDCODETEXT, "Invalid Level Code", MB_OK);
 		return (0);
@@ -1748,10 +1786,12 @@ public class OriginalFurballC {
 	 * application window of the program.
 	 */
 	
+	/*
 	void menuexit()
 	{
 		DestroyWindow(hWnd);
 	}
+	*/
 	
 	/********************************************/
 	/* MENU SOUND EFFECTS                       */
@@ -1775,18 +1815,20 @@ public class OriginalFurballC {
 	 * this task.
 	 */
 	
-	void menusoundeffects()
-	{
-		/* TOGGLE THE SOUND EFFECTS */
+	void menusoundeffects() {
+		
+		// TOGGLE THE SOUND EFFECTS
 	
+		/*
 		if (soundeffectson)
 			writeregvar("RegSound", &soundeffectson, (int)FALSE);
 		else
 			writeregvar("RegSound", &soundeffectson, (int)TRUE);
+			*/
 	}
 	
 	/********************************************/
-	/* MENU QUICK HELP                          */
+	// MENU QUICK HELP                          */
 	/********************************************/
 	
 	/* 
@@ -1801,10 +1843,9 @@ public class OriginalFurballC {
 	 * control returns to MainWindowProcedure.
 	 */
 	
-	void menuquickhelp()
-	{
-		DialogBox(hgInstance, MAKEINTRESOURCE(IDD_QUICKHELP), hWnd,
-			(DLGPROC)dpquickhelp);
+	void menuquickhelp() {
+		
+		DialogBox(hgInstance, MAKEINTRESOURCE(IDD_QUICKHELP), hWnd, (DLGPROC)dpquickhelp);
 	}
 	
 	/********************************************/
@@ -1832,21 +1873,21 @@ public class OriginalFurballC {
 	 * closes.
 	 */
 	
-	BOOL CALLBACK dpquickhelp(HWND hDlg, UINT message,
-							  WPARAM wParam, LPARAM lParam)
-	{
+	/*
+	BOOL CALLBACK dpquickhelp(HWND hDlg, UINT message,  WPARAM wParam, LPARAM lParam) {
+		
 		switch (message) {
 	
 			case WM_INITDIALOG: // THE DIALOG IS ABOUT TO BE DISPLAYED
 	
-				/* CHECK THE SHOW AGAIN BOX APPROPRIATELY */
+				// CHECK THE SHOW AGAIN BOX APPROPRIATELY
 	
 				if (startuphelp)
 					CheckDlgButton(hDlg, IDC_SHOWAGAIN, 1);
 				else
 					CheckDlgButton(hDlg, IDC_SHOWAGAIN, 0);
 	
-				/* TELL WINDOWS TO SET FOCUS TO OK BUTTON */
+				// TELL WINDOWS TO SET FOCUS TO OK BUTTON
 	
 				return (TRUE);
 	
@@ -1856,7 +1897,7 @@ public class OriginalFurballC {
 	
 					case IDOK: // THE USER PRESSED OK
 	
-						/* TAKE ANSWER FROM DIALOG BOX */
+						// TAKE ANSWER FROM DIALOG BOX
 	
 						if (IsDlgButtonChecked(hDlg, IDC_SHOWAGAIN))
 							writeregvar("RegHelp", &startuphelp, (int)TRUE);
@@ -1869,7 +1910,7 @@ public class OriginalFurballC {
 	
 					case IDCANCEL: // THE USER PRESSED CANCEL
 	
-						/* CHANGE NOTHING */
+						// CHANGE NOTHING
 	
 						EndDialog(hDlg,FALSE);
 						return (TRUE);
@@ -1885,6 +1926,7 @@ public class OriginalFurballC {
 	
 		}
 	}
+	*/
 	
 	/********************************************/
 	/* MENU ABOUT                               */
@@ -1902,10 +1944,9 @@ public class OriginalFurballC {
 	 * returns to MainWindowProcedure.
 	 */
 	
-	void menuabout()
-	{
-		DialogBox(hgInstance, MAKEINTRESOURCE(IDD_ABOUT), hWnd,
-			(DLGPROC)dpabout);
+	void menuabout() {
+		
+		DialogBox(hgInstance, MAKEINTRESOURCE(IDD_ABOUT), hWnd, (DLGPROC)dpabout);
 	}
 	
 	/********************************************/
@@ -1926,9 +1967,9 @@ public class OriginalFurballC {
 	 * MainWindowProcedure.
 	 */
 	
-	BOOL CALLBACK dpabout(HWND hDlg, UINT message, 
-						  WPARAM wParam, LPARAM lParam)
-	{
+	/*
+	BOOL CALLBACK dpabout(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam) {
+		
 		switch (message) {
 	
 			case WM_INITDIALOG: // THE DIALOG IS ABOUT TO BE DISPLAYED
@@ -1946,6 +1987,7 @@ public class OriginalFurballC {
 	
 		}
 	}
+	*/
 	
 	/********************************************/
 	/* GAME OVER                                */
@@ -1966,21 +2008,21 @@ public class OriginalFurballC {
 	 * setup the game from the very start.
 	 */
 	
-	void gameover()
-	{
-		/* STOP THE MUSIC */
+	void gameover() {
+		
+		// STOP THE MUSIC
 	
 		jukebox(STOP);
 	
-		/* CALL A SOUND EFFECT */
+		// CALL A SOUND EFFECT
 	
 		soundeffect(GAMEOVER);
 	
-		/* DISPLAY A DIALOG BOX */
+		// DISPLAY A DIALOG BOX
 	
 		MessageBox(hWnd, GAMEOVERTEXT, "Game Over", MB_OK);
 	
-		/* RESTART THE GAME FROM THE FIRST LEVEL */
+		// RESTART THE GAME FROM THE FIRST LEVEL
 	
 		initialize(INITIALSTARTINGLEVEL);
 	}
@@ -2006,18 +2048,17 @@ public class OriginalFurballC {
 	 * start.
 	 */
 	
-	void gamewon()
-	{
-		/* DISPLAY A DIALOG BOX AND PLAY THE VICTORY FANFARE */
+	void gamewon() {
+		
+		// DISPLAY A DIALOG BOX AND PLAY THE VICTORY FANFARE
 	
 		jukebox(WON);
 	
-		DialogBox(hgInstance, MAKEINTRESOURCE(IDD_WON), hWnd,
-			(DLGPROC)dpgamewon);
+		DialogBox(hgInstance, MAKEINTRESOURCE(IDD_WON), hWnd, (DLGPROC)dpgamewon);
 	
 		jukebox(STOP);
 	
-		/* RESTART THE GAME FROM THE FIRST LEVEL */
+		// RESTART THE GAME FROM THE FIRST LEVEL
 	
 		initialize(INITIALSTARTINGLEVEL);
 	}
@@ -2040,9 +2081,9 @@ public class OriginalFurballC {
 	 * control to gamewon.
 	 */
 	
-	BOOL CALLBACK dpgamewon(HWND hDlg, UINT message, 
-							WPARAM wParam, LPARAM lParam)
-	{
+	/*
+	BOOL CALLBACK dpgamewon(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam) {
+		
 		switch (message) {
 	
 			case WM_INITDIALOG: // THE DIALOG IS ABOUT TO BE DISPLAYED
@@ -2060,6 +2101,7 @@ public class OriginalFurballC {
 	
 		}
 	}
+	*/
 	
 	/********************************************/
 	/* SETUP REGISTRY VARIABLE                  */
@@ -2116,6 +2158,7 @@ public class OriginalFurballC {
 	 * accordingly.  The function then exits.
 	 */
 	
+	/*
 	void setupregvar(char *regvarname, int *memoryvar, int defaultvalue)
 	{
 		HKEY  currentkey;
@@ -2123,7 +2166,7 @@ public class OriginalFurballC {
 		long  result;
 		DWORD data, size, type;
 	
-		/* OPEN OR CREATE A REGISTRY KEY FOR THIS APPLICATION */
+		// OPEN OR CREATE A REGISTRY KEY FOR THIS APPLICATION
 	
 		result = RegCreateKeyEx(
 			HKEY_CURRENT_USER,				// HANDLE OF THE OPEN ROOT KEY
@@ -2141,7 +2184,7 @@ public class OriginalFurballC {
 			MessageBox(hWnd, "The registry could not be opened.",
 				APPNAMELONG, MB_OK);
 	
-		/* READ REGVARNAME AND PUT ITS VALUE IN DATA */
+		// READ REGVARNAME AND PUT ITS VALUE IN DATA
 		
 		data = DOUBLEWORDDATA; // 1
 		size = DOUBLEWORDSIZE; // 4
@@ -2156,19 +2199,19 @@ public class OriginalFurballC {
 			&size					// SIZE OF BUFFER
 		);
 	
-		/* CASE 1: THE VALUE WAS READ CORRECTLY */
+		// CASE 1: THE VALUE WAS READ CORRECTLY
 	
 		if (result == ERROR_SUCCESS) {
 	
-			/* LOAD THE READ VALUE INTO THE MEMORY VARIABLE */
+			// LOAD THE READ VALUE INTO THE MEMORY VARIABLE
 	
 			*memoryvar = (int)data;
 	
-		/* CASE 2: THE VALUE COULD NOT BE READ */
+		// CASE 2: THE VALUE COULD NOT BE READ
 	
 		} else {
 	
-			/* PUT THE DEFAULT VALUE IN THE REGISTRY */
+			// PUT THE DEFAULT VALUE IN THE REGISTRY
 	
 			data = defaultvalue;
 	
@@ -2181,12 +2224,13 @@ public class OriginalFurballC {
 				BYTESINDWORD			// THERE ARE 4 BYTES IN A DWORD
 			);
 	
-			/* PUT THE DEFAULT VALUE IN THE MEMORY VARIABLE */
+			// PUT THE DEFAULT VALUE IN THE MEMORY VARIABLE
 	
 			*memoryvar = defaultvalue;
 	
 		}
 	}
+	*/
 	
 	/********************************************/
 	/* WRITE REGISTRY VARIABLE                  */
@@ -2225,13 +2269,14 @@ public class OriginalFurballC {
 	 * variable to the same value.  The function then exits.
 	 */
 	
+	/*
 	void writeregvar(char *regvarname, int *memoryvar, int newvalue)
 	{
 		HKEY  currentkey;
 		DWORD disposition;
 		long  result;
 	
-		/* OPEN OR CREATE A REGISTRY KEY FOR THIS APPLICATION */
+		// OPEN OR CREATE A REGISTRY KEY FOR THIS APPLICATION
 	
 		result = RegCreateKeyEx(
 			HKEY_CURRENT_USER,				// HANDLE OF THE OPEN ROOT KEY
@@ -2249,7 +2294,7 @@ public class OriginalFurballC {
 			MessageBox(hWnd, "The registry could not be opened.",
 				APPNAMELONG, MB_OK);
 	
-		/* WRITE THE GIVEN VALUE TO THE SPECIFIED REGISTRY VARIABLE */
+		// WRITE THE GIVEN VALUE TO THE SPECIFIED REGISTRY VARIABLE
 	
 		result = RegSetValueEx(
 			currentkey,					// HANDLE TO THE FURBALL KEY
@@ -2260,10 +2305,11 @@ public class OriginalFurballC {
 			BYTESINDWORD				// THERE ARE 4 BYTES IN A DWORD
 		);
 	
-		/* ALSO CHANGE THE VARIABLE IN MEMORY */
+		// ALSO CHANGE THE VARIABLE IN MEMORY
 	
 		*memoryvar = newvalue;
 	}
+	*/
 	
 	/********************************************/
 	/* CHECK DAY STATE                          */
@@ -2303,15 +2349,15 @@ public class OriginalFurballC {
 	 * NIGHT.
 	 */
 	
-	void checkdaystate()
-	{
-		daystate newdaystate;
+	void checkdaystate() {
+		
+		DayState newdaystate;
 	
-		/* FIND THE LIGHT STATE RIGHT NOW */
+		// FIND THE LIGHT STATE RIGHT NOW
 	
 		newdaystate = getlight();
 	
-		/* CHECK FOR DAWN */
+		// CHECK FOR DAWN
 	
 		if (currentdaystate == NIGHT && newdaystate == DAY) {
 	
@@ -2319,10 +2365,9 @@ public class OriginalFurballC {
 			currentdaystate = newdaystate;
 			drawboard();
 			jukebox(PLAY);
-	
 		}
 	
-		/* CHECK FOR DUSK */
+		// CHECK FOR DUSK
 	
 		if (currentdaystate == DAY && newdaystate == NIGHT) {
 	
@@ -2330,7 +2375,6 @@ public class OriginalFurballC {
 			currentdaystate = newdaystate;
 			drawboard();
 			jukebox(PLAY);
-	
 		}
 	}
 	
@@ -2364,8 +2408,8 @@ public class OriginalFurballC {
 	 * function returns NIGHT.
 	 */
 	
-	daystate getlight()
-	{
+	DayState getlight() {
+		
 		SYSTEMTIME currentlocaltime;
 		int hournow;
 	
