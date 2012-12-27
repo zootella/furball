@@ -71,20 +71,26 @@ public class OriginalFurballC {
 	
 	/* EXTERNAL INCLUDE STATEMENTS */
 	
+	/*
 	#include <windows.h>
 	#include "resource.h"
 	#include "mmsystem.h"
+	*/
 	
 	/* INTERNAL INCLUDE STATEMENTS */
 	
+	/*
 	#include "levels.h"
 	#include "furball.h"
 	#include "game.h"
+	*/
 	
 	/* WINDOWS GLOBAL VARIABLES */
 	
+	/*
 	HINSTANCE hgInstance;	// THE UNIQUE NUMBER FOR THIS INSTANCE
 	HWND hWnd;				// THE HANDLE TO THE APPLICATION WINDOW
+	*/
 	
 	HBITMAP fbongrass, fbongrassn; // HOLDERS FOR THE BITMAPS
 	HBITMAP fbonsink, fbonsinkn;
@@ -101,9 +107,9 @@ public class OriginalFurballC {
 	
 	/* REGISTRY GLOBAL VARIABLES */
 	
-	BOOL soundeffectson;
-	BOOL startuphelp;
-	music currentmusicoption;
+	boolean soundeffectson;
+	boolean startuphelp;
+	Music currentmusicoption;
 	
 	/* GAME GLOBAL VARIABLES */
 	
