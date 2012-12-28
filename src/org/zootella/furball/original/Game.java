@@ -118,8 +118,8 @@ public class Game {
 	
 	/* REGISTRY GLOBAL VARIABLES */
 	
-	boolean soundeffectson;
-	boolean startuphelp;
+	public static boolean soundeffectson;
+	public static boolean startuphelp;
 	/*
 	Music currentmusicoption;
 	*/
@@ -129,7 +129,7 @@ public class Game {
 	/*
 	int currentlevel;
 	*/
-	Day currentdaystate;
+	public static Day currentdaystate;
 	
 	/********************************************/
 	/* WIN MAIN                                 */
@@ -184,7 +184,7 @@ public class Game {
 	 * program was run with.
 	 */
 	
-	public void WinMain() {
+	public static void winMain() {
 
 		/*
 		MSG        msg;
@@ -330,8 +330,8 @@ public class Game {
 		*/
 	
 		/* INITIALIZE THE GAME BEFORE DISPLAYING THE WINDOW */
-	
-		currentdaystate = getlight();
+		
+		currentdaystate = getLight();
 		initialize(Define.initialStartingLevel); // START AT LEVEL 0
 	
 		/* SHOW THE MAIN WINDOW AS REQUESTED BY WINDOWS AND PAINT IT */
@@ -781,7 +781,7 @@ public class Game {
 	 * graphics services needed by the program.
 	 */
 	
-	void drawtile(Tile tilename, int xgrid, int ygrid) {
+	public static void drawTile(Tile tilename, int xgrid, int ygrid) {
 		
 		/*
 		HDC hDC, hDCMemory;
@@ -923,7 +923,7 @@ public class Game {
 	 * function is freed, and the function exits.
 	 */
 	
-	void statusbar(int currentlevel, int lives) {
+	public static void statusBar(int currentlevel, int lives) {
 		
 		/*
 		HDC hDC;
@@ -1019,7 +1019,7 @@ public class Game {
 	 * being played.
 	 */
 	
-	void soundeffect(Sound sound) {
+	public static void soundEffect(Sound sound) {
 
 		/*
 		// IF THE SOUND EFFECTS ARE OFF, LEAVE NOW
@@ -1150,7 +1150,7 @@ public class Game {
 	 * from game.c.
 	 */
 	
-	void jukebox(Music command) {
+	public static void jukebox(Music command) {
 		
 		/*
 		int songnum;
@@ -1429,7 +1429,7 @@ public class Game {
 	 * does not blink on after a moment of initialization.
 	 */
 	
-	void prepareoptionsmenu() {
+	public static void prepareOptionsMenu() {
 		
 		/*
 		HMENU hMenu;
@@ -1571,7 +1571,7 @@ public class Game {
 	 * currently running game at all.
 	 */
 	
-	void menunewgame() {
+	public static void menuNewGame() {
 		
 		/*
 		int response = MessageBox(hWnd, NEWGAMETEXT, "New Game", MB_OKCANCEL);
@@ -1599,9 +1599,9 @@ public class Game {
 	 * resetting the level are carried out.
 	 */
 	
-	void menugiveup() {
+	public static void menuGiveUp() {
 		
-		killfurball();
+		killFurball();
 	}
 	
 	/********************************************/
@@ -1626,7 +1626,7 @@ public class Game {
 	 * located within the dialog procedure.
 	 */
 	
-	void menuenterlevelcode() {
+	public static void menuEnterLevelCode() {
 		
 		/*
 		DialogBox(hgInstance, MAKEINTRESOURCE(IDD_ENTERCODE), hWnd, (DLGPROC)dplevelcode);
@@ -1766,7 +1766,7 @@ public class Game {
 	 * value of 0, indicating that the level code was not valid.
 	 */
 	
-	int lookuplevelcode(String inputstring) {
+	public static int lookupLevelCode(String inputstring) {
 		
 		int levelscan;
 	
@@ -1836,7 +1836,7 @@ public class Game {
 	 * this task.
 	 */
 	
-	void menusoundeffects() {
+	public static void menuSoundEffects() {
 		
 		// TOGGLE THE SOUND EFFECTS
 	
@@ -1864,7 +1864,7 @@ public class Game {
 	 * control returns to MainWindowProcedure.
 	 */
 	
-	void menuquickhelp() {
+	public static void menuQuickHelp() {
 		
 		/*
 		DialogBox(hgInstance, MAKEINTRESOURCE(IDD_QUICKHELP), hWnd, (DLGPROC)dpquickhelp);
@@ -1967,7 +1967,7 @@ public class Game {
 	 * returns to MainWindowProcedure.
 	 */
 	
-	void menuabout() {
+	public static void menuAbout() {
 		
 		/*
 		DialogBox(hgInstance, MAKEINTRESOURCE(IDD_ABOUT), hWnd, (DLGPROC)dpabout);
@@ -2033,15 +2033,16 @@ public class Game {
 	 * setup the game from the very start.
 	 */
 	
-	void gameover() {
+	public static void gameOver() {
 		
 		// STOP THE MUSIC
 	
+		/*
 		jukebox(Music.stop);
 	
 		// CALL A SOUND EFFECT
 	
-		soundeffect(Sound.gameOver);
+		soundEffect(Sound.gameOver);
 	
 		// DISPLAY A DIALOG BOX
 	
@@ -2075,17 +2076,20 @@ public class Game {
 	 * start.
 	 */
 	
-	void gamewon() {
+	public static void gameWon() {
 		
 		// DISPLAY A DIALOG BOX AND PLAY THE VICTORY FANFARE
 	
+		/*
 		jukebox(Music.won);
 	
 		/*
 		DialogBox(hgInstance, MAKEINTRESOURCE(IDD_WON), hWnd, (DLGPROC)dpgamewon);
 		*/
 	
+		/*
 		jukebox(Music.stop);
+		*/
 	
 		// RESTART THE GAME FROM THE FIRST LEVEL
 	
@@ -2378,23 +2382,22 @@ public class Game {
 	 * NIGHT.
 	 */
 	
-	void checkdaystate() {
+	public static void checkDayState() {
 		
+		/*
 		Day newdaystate;
 	
 		// FIND THE LIGHT STATE RIGHT NOW
 	
-		newdaystate = getlight();
+		newdaystate = getLight();
 	
 		// CHECK FOR DAWN
 	
 		if (currentdaystate == Day.night && newdaystate == Day.day) {
 	
-			/*
 			MessageBox(hWnd, DAWNTEXT, "Dawn Breaks", MB_OK);
-			*/
 			currentdaystate = newdaystate;
-			drawboard();
+			drawBoard();
 			jukebox(Music.play);
 		}
 	
@@ -2402,13 +2405,12 @@ public class Game {
 	
 		if (currentdaystate == Day.day && newdaystate == Day.night) {
 	
-			/*
 			MessageBox(hWnd, DUSKTEXT, "Night Falls", MB_OK);
-			*/
 			currentdaystate = newdaystate;
-			drawboard();
+			drawBoard();
 			jukebox(Music.play);
 		}
+		*/
 	}
 	
 	/********************************************/
@@ -2441,7 +2443,7 @@ public class Game {
 	 * function returns NIGHT.
 	 */
 	
-	Day getlight() {
+	public static Day getLight() {
 		
 		/*
 		SYSTEMTIME currentlocaltime;
@@ -2536,9 +2538,9 @@ public class Game {
 	
 	// GAME GLOBAL VARIABLES */
 	
-	Tile board[][];
-	Tile prevboard[][];
-	int currentlevel, lives;
+	public static Tile board[][];
+	public static Tile prevBoard[][];
+	public static int currentLevel, lives;
 	
 	/********************************************/
 	/* INITIALIZE                               */
@@ -2561,22 +2563,24 @@ public class Game {
 	 * MainWindowProcedure.
 	 */
 	
-	void initialize(int startinglevel) {
+	public static void initialize(int startinglevel) {
 		
 		// SET THE STARTING LEVEL AND INITIAL LIVES */
 	
-		currentlevel = startinglevel;
+		currentLevel = startinglevel;
 		lives = Define.livesAtStart;
 	
 		// SETUP THE BOARD AND PREVIOUSBOARD ARRAYS */
 	
-		loadlevel(currentlevel);
-		saveboard();
+		loadLevel(currentLevel);
+		saveBoard();
 	
 		// DRAW THE WINDOW AND START THE MUSIC */
 	
-		drawwindow();
+		drawWindow();
+		/*
 		jukebox(Music.play);
+		*/
 	}
 	
 	/********************************************/
@@ -2603,7 +2607,7 @@ public class Game {
 	 * Adventures to have multiple levels.
 	 */
 	
-	void loadlevel(int level) {
+	public static void loadLevel(int level) {
 		
 		int row, col;
 	
@@ -2630,13 +2634,13 @@ public class Game {
 	 * information in the prevboard array is lost.
 	 */
 	
-	void saveboard()
-	{
+	public static void saveBoard() {
+		
 		int row, col;
 	
 		for (row = 0; row <= (Define.boardRows - 1); row++)
 			for (col = 0; col <= (Define.boardCols - 1); col++)
-				prevboard[row][col] = board[row][col];
+				prevBoard[row][col] = board[row][col];
 	}
 	
 	/********************************************/
@@ -2767,7 +2771,7 @@ public class Game {
 	 * MainWindowProcedure to get the next message.
 	 */
 	
-	void movefurball(Direction givendir) {
+	public static void moveFurball(Direction givendir) {
 		
 		int /*arow, acol,*/ brow = 0, bcol = 0, crow = 0, ccol = 0;
 		Tile atile, btile, ctile;
@@ -2775,11 +2779,11 @@ public class Game {
 	
 		// CHECK THE DAY STATE BEFORE EACH MOVE */
 	
-		checkdaystate();
+		checkDayState();
 	
 		// LOAD THE CURRENT POSITION OF THE FURBALL INTO AROW AND ACOL */
 	
-		Location a = findfurball();
+		Location a = findFurball();
 	
 		// COMPUTE THE COORDINATES OF B AND C FROM THE GIVEN DIRECTION */
 	
@@ -2817,15 +2821,15 @@ public class Game {
 	
 		// FIND THE THREE TILES AND TYPES */
 	
-		atile = whatsat(a.row, a.col);
-		btile = whatsat(brow, bcol);
-		ctile = whatsat(crow, ccol);
+		atile = whatsAt(a.row, a.col);
+		btile = whatsAt(brow, bcol);
+		ctile = whatsAt(crow, ccol);
 	
 		/*
 		atype = gettype(atile);
 		*/
-		btype = gettype(btile);
-		ctype = gettype(ctile);
+		btype = getType(btile);
+		ctype = getType(ctile);
 	
 		// CASE 1: THE DESTINATION TILE IS BLOCKING */
 	
@@ -2843,12 +2847,12 @@ public class Game {
 	
 			// BACKUP THE BOARD BEFORE CHANGING IT */
 	
-			saveboard();
+			saveBoard();
 	
 			// PLAY A SOUND EFFECT IF APPROPRIATE */
 	
 			if (btile == Tile.hr)
-				soundeffect(Sound.getHeart);
+				soundEffect(Sound.getHeart);
 	
 			// MAKE THE MOVE */
 	
@@ -2864,8 +2868,8 @@ public class Game {
 	
 			// UPDATE THE SCREEN AND RUN CHECKS ON THE NEW BOARD */
 	
-			runchecks();
-			updateboard();
+			runChecks();
+			updateBoard();
 			return;
 	
 		}
@@ -2876,7 +2880,7 @@ public class Game {
 	
 			// BACKUP THE BOARD BEFORE CHANGING IT */
 	
-			saveboard();
+			saveBoard();
 	
 			// MAKE THE MOVE */
 	
@@ -2890,8 +2894,8 @@ public class Game {
 	
 			// UPDATE THE SCREEN AND COMPLETE THE LEVEL */
 	
-			updateboard();
-			finishedlevel();
+			updateBoard();
+			finishedLevel();
 			return;
 	
 		}
@@ -2907,15 +2911,15 @@ public class Game {
 	
 			// BACKUP THE BOARD BEFORE CHANGING IT */
 	
-			saveboard();
+			saveBoard();
 			
 			// PLAY A SOUND EFFECT IF APPROPRIATE */
 	
 			if (ctile == Tile.hr)
-				soundeffect(Sound.getHeart);
+				soundEffect(Sound.getHeart);
 			
 			if (ctile == Tile.sk)
-				soundeffect(Sound.boxSink);
+				soundEffect(Sound.boxSink);
 	
 			// MAKE THE MOVE */
 	
@@ -2936,8 +2940,8 @@ public class Game {
 	
 			// UPDATE THE SCREEN AND RUN CHECKS ON THE NEW BOARD */
 	
-			runchecks();
-			updateboard();
+			runChecks();
+			updateBoard();
 			return;
 		}
 	}
@@ -3004,7 +3008,7 @@ public class Game {
 	 * safe in each direction, and the function ends
 	 */
 	
-	void runchecks() {
+	public static void runChecks() {
 		
 		int opendoor, heartsleft, uncoveredsinks;
 		int row, col;
@@ -3049,7 +3053,7 @@ public class Game {
 		if (opendoor == 0 && heartsleft == 0 && uncoveredsinks == 0) {
 	
 			board[doorrow][doorcol] = Tile.dp;
-			soundeffect(Sound.doorOpens);
+			soundEffect(Sound.doorOpens);
 	
 		}
 	
@@ -3065,7 +3069,7 @@ public class Game {
 	
 		// LOCATE THE FURBALL */
 	
-		Location fb = findfurball();
+		Location fb = findFurball();
 	
 		// SEARCH FOR DANGER IN EACH DIRECTION */
 	
@@ -3074,12 +3078,12 @@ public class Game {
 	
 		while (true) {
 			searchrow++;
-			found = getdanger(whatsat(searchrow, searchcol));
+			found = getDanger(whatsAt(searchrow, searchcol));
 			if (found == Danger.safe) {
 				break;
 			}
 			if (found == Danger.attack) {
-				killfurball();
+				killFurball();
 				return;
 			}
 		}
@@ -3089,12 +3093,12 @@ public class Game {
 	
 		while (true) {
 			searchcol++;
-			found = getdanger(whatsat(searchrow, searchcol));
+			found = getDanger(whatsAt(searchrow, searchcol));
 			if (found == Danger.safe) {
 				break;
 			}
 			if (found == Danger.attack) {
-				killfurball();
+				killFurball();
 				return;
 			}
 		}
@@ -3104,12 +3108,12 @@ public class Game {
 	
 		while (true) {
 			searchrow--;
-			found = getdanger(whatsat(searchrow, searchcol));
+			found = getDanger(whatsAt(searchrow, searchcol));
 			if (found == Danger.safe) {
 				break;
 			}
 			if (found == Danger.attack) {
-				killfurball();
+				killFurball();
 				return;
 			}
 		}
@@ -3119,12 +3123,12 @@ public class Game {
 	
 		while (true) {
 			searchcol--;
-			found = getdanger(whatsat(searchrow, searchcol));
+			found = getDanger(whatsAt(searchrow, searchcol));
 			if (found == Danger.safe) {
 				break;
 			}
 			if (found == Danger.attack) {
-				killfurball();
+				killFurball();
 				return;
 			}
 		}
@@ -3173,7 +3177,7 @@ public class Game {
 	 * dealt with in this function.
 	 */
 	
-	Location findfurball() {
+	public static Location findFurball() {
 		
 		int srow, scol;
 	
@@ -3228,7 +3232,7 @@ public class Game {
 	 * within and outside its margins.
 	 */
 	
-	Tile whatsat(int row, int col) {
+	public static Tile whatsAt(int row, int col) {
 		
 		boolean foundinvalid;
 	
@@ -3273,7 +3277,7 @@ public class Game {
 	 * tile to be able to analyze a move.
 	 */
 	
-	Reaction gettype(Tile giventile) {
+	public static Reaction getType(Tile giventile) {
 		
 		switch (giventile) {
 	
@@ -3333,7 +3337,7 @@ public class Game {
 	 * location.
 	 */
 	
-	Danger getdanger(Tile giventile) {
+	public static Danger getDanger(Tile giventile) {
 		
 		switch (giventile) {
 	
@@ -3386,15 +3390,15 @@ public class Game {
 	 * MainWindowProcedure where the next message is processed.
 	 */
 	
-	void killfurball() {
+	public static void killFurball() {
 		
 		// DISPLAY THE LETHAL BOARD */
 	
-		updateboard();
+		updateBoard();
 	
 		// PLAY A SOUND EFFECT */
 	
-		soundeffect(Sound.kill);
+		soundEffect(Sound.kill);
 	
 		// HAVE THE PROGRAM PAUSE FOR A MOMENT */
 	
@@ -3405,7 +3409,7 @@ public class Game {
 		// IF NO LIVES REMAIN, END THE GAME */
 	
 		if (lives == 0)
-			gameover();
+			gameOver();
 	
 		// OTHERWISE, DECRIMENT THE NUMBER OF LIVES */
 	
@@ -3413,12 +3417,12 @@ public class Game {
 	
 		// RESET AND RESTART THE CURRENT LEVEL */
 	
-		loadlevel(currentlevel);
-		saveboard();
+		loadLevel(currentLevel);
+		saveBoard();
 	
 		// DRAW THE WINDOW AND START THE MUSIC */
 	
-		drawwindow();
+		drawWindow();
 		jukebox(Music.play);
 	}
 	
@@ -3444,11 +3448,11 @@ public class Game {
 	 * redrawn, and the music is restarted.
 	 */
 	
-	void finishedlevel() {
+	public static void finishedLevel() {
 		
 		// PLAY A SOUND EFFECT */
 	
-		soundeffect(Sound.levelDone);
+		soundEffect(Sound.levelDone);
 	
 		// HAVE THE PROGRAM PAUSE FOR A MOMENT */
 	
@@ -3458,23 +3462,23 @@ public class Game {
 	
 		// IF THIS IS THE LAST LEVEL, THE GAME HAS BEEN WON */
 	
-		if (currentlevel == Define.numLevels - 1) {
-			gamewon();
+		if (currentLevel == Define.numLevels - 1) {
+			gameWon();
 			return;
 		}
 	
 		// OTHERWISE, MOVE ON TO THE NEXT LEVEL */
 	
-		currentlevel++;
+		currentLevel++;
 	
 		// SETUP THE NEXT LEVEL */
 		
-		loadlevel(currentlevel);
-		saveboard();
+		loadLevel(currentLevel);
+		saveBoard();
 	
 		// DRAW THE WINDOW AND START THE MUSIC */
 	
-		drawwindow();
+		drawWindow();
 		jukebox(Music.play);
 	}
 	
@@ -3494,13 +3498,13 @@ public class Game {
 	 * board array.
 	 */
 	
-	void drawboard() {
+	public static void drawBoard() {
 		
 		int row, col;
 	
 		for (row = 0; row <= (Define.boardRows - 1); row++)
 			for (col = 0; col <= (Define.boardCols - 1); col++)
-				drawtile(board[row][col], col, row);
+				drawTile(board[row][col], col, row);
 	}
 	
 	/********************************************/
@@ -3519,10 +3523,10 @@ public class Game {
 	 * then called to draw the entire board on the screen.
 	 */
 	
-	void drawwindow() {
+	public static void drawWindow() {
 		
-		statusbar(currentlevel, lives);
-		drawboard();
+		statusBar(currentLevel, lives);
+		drawBoard();
 	}
 	
 	/********************************************/
@@ -3556,14 +3560,14 @@ public class Game {
 	 * time the Furball moves.
 	 */
 	
-	void updateboard() {
+	public static void updateBoard() {
 		
 		int row, col;
 	
 		for (row = 0; row <= (Define.boardRows - 1); row++)
 			for (col = 0; col <= (Define.boardCols - 1); col++)
-				if (board[row][col] != prevboard[row][col])
-					drawtile(board[row][col], col, row);
+				if (board[row][col] != prevBoard[row][col])
+					drawTile(board[row][col], col, row);
 	}
 	
 	/**********************************************************/
