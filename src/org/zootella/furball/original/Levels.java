@@ -1,6 +1,6 @@
 package org.zootella.furball.original;
 	
-public class OriginalLevelsH {
+public class Levels {
 	
 	/**********************************************************/
 	/*                                                        */
