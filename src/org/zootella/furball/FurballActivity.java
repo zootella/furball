@@ -42,8 +42,10 @@ public class FurballActivity extends Activity {
 			boardx = (w - (square * boardSize)) / 2;
 			boardy = (h - (square * boardSize)) / 2;
 
+			/*
 			int x = boardx + (10 * square);
 			int y = boardy + (10 * square);
+			*/
 			
 			boolean checker = false;
 			

@@ -177,9 +177,9 @@ public class Game {
 		MSG        msg;
 		WNDCLASSEX wndclass;
 		HICON      hIcon;
-		*/
 		int        desxpos, desypos;
 		int        deswinwidth, deswinheight;
+		*/
 	
 		/* SAVE THE INSTANCE NUMBER IN A GLOBAL VARIABLE */
 	
@@ -2777,7 +2777,7 @@ public class Game {
 		
 		int /*arow, acol,*/ brow = 0, bcol = 0, crow = 0, ccol = 0;
 		Tile atile, btile, ctile;
-		TileType atype, btype, ctype;
+		TileType /*atype,*/ btype, ctype;
 	
 		// CHECK THE DAY STATE BEFORE EACH MOVE */
 	
@@ -2827,7 +2827,9 @@ public class Game {
 		btile = whatsat(brow, bcol);
 		ctile = whatsat(crow, ccol);
 	
+		/*
 		atype = gettype(atile);
+		*/
 		btype = gettype(btile);
 		ctype = gettype(ctile);
 	
@@ -3012,7 +3014,7 @@ public class Game {
 		
 		int opendoor, heartsleft, uncoveredsinks;
 		int row, col;
-		int doorrow = 0, doorcol = 0, fbrow, fbcol, searchrow, searchcol;
+		int doorrow = 0, doorcol = 0, /*fbrow, fbcol,*/ searchrow, searchcol;
 		TileDanger found;
 	
 		// CHECK 1: OPEN OR CLOSE THE DOOR IF NECESSARY */
