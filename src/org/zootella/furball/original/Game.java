@@ -768,7 +768,7 @@ public class Game {
 	 * graphics services needed by the program.
 	 */
 	
-	void drawtile(OldTile tilename, int xgrid, int ygrid) {
+	void drawtile(Tile tilename, int xgrid, int ygrid) {
 		
 		/*
 		HDC hDC, hDCMemory;
@@ -2523,8 +2523,8 @@ public class Game {
 	
 	// GAME GLOBAL VARIABLES */
 	
-	OldTile board[][];
-	OldTile prevboard[][];
+	Tile board[][];
+	Tile prevboard[][];
 	int currentlevel, lives;
 	
 	/********************************************/
@@ -2596,26 +2596,7 @@ public class Game {
 	
 		for (row = 0; row <= (Define.BOARDROWS - 1); row++)
 			for (col = 0; col <= (Define.BOARDCOLS - 1); col++)
-				board[row][col] = convertTileCodeToTile(Levels.levelbank[level][row][col]);
-	}
-	
-	OldTile convertTileCodeToTile(Tile code) {
-		switch (code) {
-		case fg: return OldTile.fg;
-		case fs: return OldTile.fs;
-		case bg: return OldTile.bg;
-		case bs: return OldTile.bs;
-		case rk: return OldTile.rk;
-		case wl: return OldTile.wl;
-		case en: return OldTile.en;
-		case gs: return OldTile.gs;
-		case sk: return OldTile.sk;
-		case hr: return OldTile.hr;
-		case dc: return OldTile.dc;
-		case dp: return OldTile.dp;
-		
-		default: return OldTile.rk;
-		}
+				board[row][col] = Levels.levelbank[level][row][col];
 	}
 	
 	/********************************************/
@@ -2776,7 +2757,7 @@ public class Game {
 	void movefurball(Direction givendir) {
 		
 		int /*arow, acol,*/ brow = 0, bcol = 0, crow = 0, ccol = 0;
-		OldTile atile, btile, ctile;
+		Tile atile, btile, ctile;
 		TileType /*atype,*/ btype, ctype;
 	
 		// CHECK THE DAY STATE BEFORE EACH MOVE */
@@ -2853,20 +2834,20 @@ public class Game {
 	
 			// PLAY A SOUND EFFECT IF APPROPRIATE */
 	
-			if (btile == OldTile.hr)
+			if (btile == Tile.hr)
 				soundeffect(SoundTitle.GETHEART);
 	
 			// MAKE THE MOVE */
 	
-			if (atile == OldTile.fg)
-				board[a.row][a.col] = OldTile.gs;
+			if (atile == Tile.fg)
+				board[a.row][a.col] = Tile.gs;
 			else
-				board[a.row][a.col] = OldTile.sk;
+				board[a.row][a.col] = Tile.sk;
 	
-			if (btile == OldTile.sk)
-				board[brow][bcol] = OldTile.fs;
+			if (btile == Tile.sk)
+				board[brow][bcol] = Tile.fs;
 			else
-				board[brow][bcol] = OldTile.fg; // MOVED ONTO GRASS OR HEART
+				board[brow][bcol] = Tile.fg; // MOVED ONTO GRASS OR HEART
 	
 			// UPDATE THE SCREEN AND RUN CHECKS ON THE NEW BOARD */
 	
@@ -2886,13 +2867,13 @@ public class Game {
 	
 			// MAKE THE MOVE */
 	
-			if (atile == OldTile.fg)
-				board[a.row][a.col] = OldTile.gs;
+			if (atile == Tile.fg)
+				board[a.row][a.col] = Tile.gs;
 	
-			if (atile == OldTile.fs)
-				board[a.row][a.col] = OldTile.sk;
+			if (atile == Tile.fs)
+				board[a.row][a.col] = Tile.sk;
 	
-			board[brow][bcol] = OldTile.dp;
+			board[brow][bcol] = Tile.dp;
 	
 			// UPDATE THE SCREEN AND COMPLETE THE LEVEL */
 	
@@ -2917,28 +2898,28 @@ public class Game {
 			
 			// PLAY A SOUND EFFECT IF APPROPRIATE */
 	
-			if (ctile == OldTile.hr)
+			if (ctile == Tile.hr)
 				soundeffect(SoundTitle.GETHEART);
 			
-			if (ctile == OldTile.sk)
+			if (ctile == Tile.sk)
 				soundeffect(SoundTitle.BOXSINK);
 	
 			// MAKE THE MOVE */
 	
-			if (atile == OldTile.fg)
-				board[a.row][a.col] = OldTile.gs;
+			if (atile == Tile.fg)
+				board[a.row][a.col] = Tile.gs;
 			else
-				board[a.row][a.col] = OldTile.sk;
+				board[a.row][a.col] = Tile.sk;
 	
-			if (btile == OldTile.bg)
-				board[brow][bcol] = OldTile.fg;
+			if (btile == Tile.bg)
+				board[brow][bcol] = Tile.fg;
 			else
-				board[brow][bcol] = OldTile.fs;
+				board[brow][bcol] = Tile.fs;
 	
-			if (ctile == OldTile.sk)
-				board[crow][ccol] = OldTile.bs;
+			if (ctile == Tile.sk)
+				board[crow][ccol] = Tile.bs;
 			else
-				board[crow][ccol] = OldTile.bg;
+				board[crow][ccol] = Tile.bg;
 	
 			// UPDATE THE SCREEN AND RUN CHECKS ON THE NEW BOARD */
 	
@@ -3028,22 +3009,22 @@ public class Game {
 		for (row = 0; row <= (Define.BOARDROWS - 1); row++) {
 			for (col = 0; col <= (Define.BOARDCOLS - 1); col++) {
 	
-				if (board[row][col] == OldTile.dc) {
+				if (board[row][col] == Tile.dc) {
 					doorrow = row;
 					doorcol = col;
 				}
-				if (board[row][col] == OldTile.dp) {
+				if (board[row][col] == Tile.dp) {
 					doorrow = row;
 					doorcol = col;
 					opendoor++;
 				}
-				if (board[row][col] == OldTile.hr) {
+				if (board[row][col] == Tile.hr) {
 					heartsleft++;
 				}
-				if (board[row][col] == OldTile.sk) {
+				if (board[row][col] == Tile.sk) {
 					uncoveredsinks++;
 				}
-				if (board[row][col] == OldTile.fs) {
+				if (board[row][col] == Tile.fs) {
 					uncoveredsinks++;
 				}
 				
@@ -3054,7 +3035,7 @@ public class Game {
 	
 		if (opendoor == 0 && heartsleft == 0 && uncoveredsinks == 0) {
 	
-			board[doorrow][doorcol] = OldTile.dp;
+			board[doorrow][doorcol] = Tile.dp;
 			soundeffect(SoundTitle.DOOROPENS);
 	
 		}
@@ -3063,7 +3044,7 @@ public class Game {
 	
 		if (opendoor != 0 && (heartsleft != 0 || uncoveredsinks != 0)) {
 	
-			board[doorrow][doorcol] = OldTile.dc;
+			board[doorrow][doorcol] = Tile.dc;
 	
 		}
 	
@@ -3185,7 +3166,7 @@ public class Game {
 	
 		for (srow = 0; srow <= (Define.BOARDROWS - 1); srow++) {
 			for (scol = 0; scol <= (Define.BOARDCOLS - 1); scol++) {
-				if ((board[srow][scol] == OldTile.fg) || (board[srow][scol] == OldTile.fs)) {
+				if ((board[srow][scol] == Tile.fg) || (board[srow][scol] == Tile.fs)) {
 	
 					return new Location(srow, scol);
 				}
@@ -3234,7 +3215,7 @@ public class Game {
 	 * within and outside its margins.
 	 */
 	
-	OldTile whatsat(int row, int col) {
+	Tile whatsat(int row, int col) {
 		
 		boolean foundinvalid;
 	
@@ -3248,7 +3229,7 @@ public class Game {
 		if (col > Define.BOARDCOLS - 1) foundinvalid = true;
 	
 		if (foundinvalid)
-			return (OldTile.OUTSIDE);
+			return (Tile.os);
 	
 		// THE COORDINATES ARE VALID, RETURN THE TILE */
 	
@@ -3279,7 +3260,7 @@ public class Game {
 	 * tile to be able to analyze a move.
 	 */
 	
-	TileType gettype(OldTile giventile) {
+	TileType gettype(Tile giventile) {
 		
 		switch (giventile) {
 	
@@ -3287,7 +3268,7 @@ public class Game {
 			case wl:
 			case en:
 			case dc:
-			case OUTSIDE:
+			case os:
 				return TileType.blocking;
 	
 			case gs:
@@ -3339,7 +3320,7 @@ public class Game {
 	 * location.
 	 */
 	
-	TileDanger getdanger(OldTile giventile) {
+	TileDanger getdanger(Tile giventile) {
 		
 		switch (giventile) {
 	
@@ -3354,7 +3335,7 @@ public class Game {
 			case dp:
 			case bg:
 			case bs:
-			case OUTSIDE:
+			case os:
 				return TileDanger.safe;
 	
 			case en:
