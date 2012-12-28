@@ -68,37 +68,37 @@ public class Define {
 	
 	/* BOARD AND WINDOW DIMENSIONS */
 	
-	public static final int TILESIZE  = 30;
-	public static final int BOARDCOLS = 11;
-	public static final int BOARDROWS = 12;
-	public static final int BCOLPIX = (TILESIZE * BOARDCOLS); // 330
-	public static final int BROWPIX = (TILESIZE * BOARDROWS); // 360
-	public static final int TDBORDER = 2;
+	public static final int tileSize  = 30;
+	public static final int boardCols = 11;
+	public static final int boardRows = 12;
+	public static final int bColPix = (tileSize * boardCols); // 330
+	public static final int bRowPix = (tileSize * boardRows); // 360
+	public static final int tdBorder = 2;
 	
 	/* WINDOWS CONSTANTS */
 	
-	public static final String APPNAME = "Furball";
-	public static final String APPNAMELONG = "Furball's Adventures";
-	public static final int MAXSTRINGLENGTH = 200;
-	public static final int SLEEPMILLI = 1500; // 1.5 SECONDS
+	public static final String appName = "Furball";
+	public static final String appNameLong = "Furball's Adventures";
+	public static final int maxStringLength = 200;
+	public static final int sleepMilli = 1500; // 1.5 SECONDS
 	
 	/* GAME PLAY CONSTANTS */
 	
-	public static final int NUMLEVELS = 50;
-	public static final int INITIALSTARTINGLEVEL = 0;
-	public static final int LIVESATSTART = 2;
-	public static final int DAWN = 6;  // DAWN WILL HAPPEN AT 6:00 AM
-	public static final int DUSK = 20; // DUSK WILL HAPPEN AT 8:00 PM
-	public static final int DAYSONGS = 10;
-	public static final int NIGHTSONGS = 6;
+	public static final int numLevels = 50;
+	public static final int initialStartingLevel = 0;
+	public static final int livesAtStart = 2;
+	public static final int dawn = 6;  // DAWN WILL HAPPEN AT 6:00 AM
+	public static final int dusk = 20; // DUSK WILL HAPPEN AT 8:00 PM
+	public static final int daySongs = 10;
+	public static final int nightSongs = 6;
 	
 	/* MESSAGE BOX TEXT */
 	
-	public static final String NEWGAMETEXT     = "This will restart the game from the first level.";
-	public static final String GAMEOVERTEXT    = "No more Furballs remain. Game over.";
-	public static final String INVALIDCODETEXT = "The level code that you typed is not correct. Try typing it again.";
-	public static final String DAWNTEXT        = "That man who does not believe that each day contains an earlier, more sacred, and auroral hour than he has yet profaned, has despaired of life, and is pursuing a descending and darkening way.\n\n-Henry David Thoreau";
-	public static final String DUSKTEXT        = "Night, the beloved. Night, when words fade and things come alive. When the destructive analysis of day is done, and all that is truly important becomes whole and sound again. When man reassembles his fragmentary self and grows with the calm of a tree.\n\n-Antoine de Saint-Exupéry";
+	public static final String newGameText     = "This will restart the game from the first level.";
+	public static final String gameOverText    = "No more Furballs remain. Game over.";
+	public static final String invalidCodeText = "The level code that you typed is not correct. Try typing it again.";
+	public static final String dawnText        = "That man who does not believe that each day contains an earlier, more sacred, and auroral hour than he has yet profaned, has despaired of life, and is pursuing a descending and darkening way.\n\n-Henry David Thoreau";
+	public static final String duskText        = "Night, the beloved. Night, when words fade and things come alive. When the destructive analysis of day is done, and all that is truly important becomes whole and sound again. When man reassembles his fragmentary self and grows with the calm of a tree.\n\n-Antoine de Saint-Exupéry";
 	
 	/* REGISTRY CONSTANTS */
 	
@@ -108,24 +108,7 @@ public class Define {
 	public static final int DOUBLEWORDTYPE 0
 	public static final int BYTESINDWORD 4
 	*/
-	public static final int DEFAULTSOUNDINT = 1; // SOUND EFFECTS ON
-	public static final int DEFAULTHELPINT  = 1; // QUICK HELP DISPLAYED
-	public static final int DEFAULTMUSICINT = 1; // CYCLE MUSIC SELECTED
-	
-	/* LEVEL BANK SHORTHAND REPLACEMENTS */
-	
-	/*
-	public static final int TileCode.FG FBONGRASS
-	public static final int FS FBONSINK
-	public static final int TileCode.BG BOXONGRASS
-	public static final int TileCode.BS BOXONSINK
-	public static final int TileCode.RK ROCK
-	public static final int TileCode.WL WALL
-	public static final int TileCode.EN ENEMY
-	public static final int TileCode.GS GRASS
-	public static final int TileCode.SK SINK
-	public static final int TileCode.HR HEART
-	public static final int TileCode.DC DOORCLOSED
-	public static final int DO DOOROPEN
-	*/
+	public static final int defaultSoundInt = 1; // SOUND EFFECTS ON
+	public static final int defaultHelpInt  = 1; // QUICK HELP DISPLAYED
+	public static final int defaultMusicInt = 1; // CYCLE MUSIC SELECTED
 }

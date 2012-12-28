@@ -1,4 +1,4 @@
-package org.zootella.furball.original;
+package org.zootella.furball.kind;
 
 public enum Tile {
 

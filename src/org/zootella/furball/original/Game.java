@@ -1,4 +1,13 @@
 package org.zootella.furball.original;
+
+import org.zootella.furball.kind.Danger;
+import org.zootella.furball.kind.Day;
+import org.zootella.furball.kind.Direction;
+import org.zootella.furball.kind.Location;
+import org.zootella.furball.kind.Music;
+import org.zootella.furball.kind.Reaction;
+import org.zootella.furball.kind.Sound;
+import org.zootella.furball.kind.Tile;
 	
 public class Game {
 	
@@ -92,6 +101,7 @@ public class Game {
 	HWND hWnd;				// THE HANDLE TO THE APPLICATION WINDOW
 	*/
 	
+	/*
 	Bitmap fbongrass, fbongrassn; // HOLDERS FOR THE BITMAPS
 	Bitmap fbonsink, fbonsinkn;
 	Bitmap boxongrass, boxongrassn;
@@ -104,19 +114,22 @@ public class Game {
 	Bitmap heart, heartn;
 	Bitmap doorclosed, doorclosedn;
 	Bitmap dooropen, dooropenn;
+	*/
 	
 	/* REGISTRY GLOBAL VARIABLES */
 	
 	boolean soundeffectson;
 	boolean startuphelp;
+	/*
 	Music currentmusicoption;
+	*/
 	
 	/* GAME GLOBAL VARIABLES */
 	
 	/*
 	int currentlevel;
 	*/
-	DayState currentdaystate;
+	Day currentdaystate;
 	
 	/********************************************/
 	/* WIN MAIN                                 */
@@ -319,7 +332,7 @@ public class Game {
 		/* INITIALIZE THE GAME BEFORE DISPLAYING THE WINDOW */
 	
 		currentdaystate = getlight();
-		initialize(Define.INITIALSTARTINGLEVEL); // START AT LEVEL 0
+		initialize(Define.initialStartingLevel); // START AT LEVEL 0
 	
 		/* SHOW THE MAIN WINDOW AS REQUESTED BY WINDOWS AND PAINT IT */
 	
@@ -1006,7 +1019,7 @@ public class Game {
 	 * being played.
 	 */
 	
-	void soundeffect(SoundTitle sound) {
+	void soundeffect(Sound sound) {
 
 		/*
 		// IF THE SOUND EFFECTS ARE OFF, LEAVE NOW
@@ -1137,7 +1150,7 @@ public class Game {
 	 * from game.c.
 	 */
 	
-	void jukebox(MusicCommand command) {
+	void jukebox(Music command) {
 		
 		/*
 		int songnum;
@@ -1248,9 +1261,9 @@ public class Game {
 	 * song filename is "FBDAT03.FBD" and not just "BOND.MID".
 	 */
 	
+	/*
 	void playsong(Music songname) {
 		
-		/*
 		// STOP PLAYING ALL MUSIC
 	
 		jukebox(STOP);
@@ -1278,8 +1291,8 @@ public class Game {
 			case THRONE:   playmidi(hWnd, "FBDAT17.FBD"); break;
 	
 		}
-		*/
 	}
+	*/
 	
 	/********************************************/
 	/* PLAY MIDI                                */
@@ -1565,7 +1578,7 @@ public class Game {
 	
 		if (response == IDOK) // THE USER PRESSED OK TO CLEAR THE BOX
 		*/
-			initialize(Define.INITIALSTARTINGLEVEL);
+			initialize(Define.initialStartingLevel);
 	}
 	
 	/********************************************/
@@ -1757,7 +1770,7 @@ public class Game {
 		
 		int levelscan;
 	
-		for (levelscan = 0; levelscan <= (Define.NUMLEVELS - 1); levelscan++) {
+		for (levelscan = 0; levelscan <= (Define.numLevels - 1); levelscan++) {
 	
 			// COMPARE THE INPUT STRING WITH THE TABLE OF CODES
 	
@@ -2024,11 +2037,11 @@ public class Game {
 		
 		// STOP THE MUSIC
 	
-		jukebox(MusicCommand.STOP);
+		jukebox(Music.stop);
 	
 		// CALL A SOUND EFFECT
 	
-		soundeffect(SoundTitle.GAMEOVER);
+		soundeffect(Sound.gameOver);
 	
 		// DISPLAY A DIALOG BOX
 	
@@ -2038,7 +2051,7 @@ public class Game {
 	
 		// RESTART THE GAME FROM THE FIRST LEVEL
 	
-		initialize(Define.INITIALSTARTINGLEVEL);
+		initialize(Define.initialStartingLevel);
 	}
 	
 	/********************************************/
@@ -2066,17 +2079,17 @@ public class Game {
 		
 		// DISPLAY A DIALOG BOX AND PLAY THE VICTORY FANFARE
 	
-		jukebox(MusicCommand.WON);
+		jukebox(Music.won);
 	
 		/*
 		DialogBox(hgInstance, MAKEINTRESOURCE(IDD_WON), hWnd, (DLGPROC)dpgamewon);
 		*/
 	
-		jukebox(MusicCommand.STOP);
+		jukebox(Music.stop);
 	
 		// RESTART THE GAME FROM THE FIRST LEVEL
 	
-		initialize(Define.INITIALSTARTINGLEVEL);
+		initialize(Define.initialStartingLevel);
 	}
 	
 	/********************************************/
@@ -2367,7 +2380,7 @@ public class Game {
 	
 	void checkdaystate() {
 		
-		DayState newdaystate;
+		Day newdaystate;
 	
 		// FIND THE LIGHT STATE RIGHT NOW
 	
@@ -2375,26 +2388,26 @@ public class Game {
 	
 		// CHECK FOR DAWN
 	
-		if (currentdaystate == DayState.NIGHT && newdaystate == DayState.DAY) {
+		if (currentdaystate == Day.night && newdaystate == Day.day) {
 	
 			/*
 			MessageBox(hWnd, DAWNTEXT, "Dawn Breaks", MB_OK);
 			*/
 			currentdaystate = newdaystate;
 			drawboard();
-			jukebox(MusicCommand.PLAY);
+			jukebox(Music.play);
 		}
 	
 		// CHECK FOR DUSK
 	
-		if (currentdaystate == DayState.DAY && newdaystate == DayState.NIGHT) {
+		if (currentdaystate == Day.day && newdaystate == Day.night) {
 	
 			/*
 			MessageBox(hWnd, DUSKTEXT, "Night Falls", MB_OK);
 			*/
 			currentdaystate = newdaystate;
 			drawboard();
-			jukebox(MusicCommand.PLAY);
+			jukebox(Music.play);
 		}
 	}
 	
@@ -2428,7 +2441,7 @@ public class Game {
 	 * function returns NIGHT.
 	 */
 	
-	DayState getlight() {
+	Day getlight() {
 		
 		/*
 		SYSTEMTIME currentlocaltime;
@@ -2442,7 +2455,7 @@ public class Game {
 		else
 			return (DayState.NIGHT);
 			*/
-		return DayState.DAY;
+		return Day.day;
 	}
 	
 	/**********************************************************/
@@ -2553,7 +2566,7 @@ public class Game {
 		// SET THE STARTING LEVEL AND INITIAL LIVES */
 	
 		currentlevel = startinglevel;
-		lives = Define.LIVESATSTART;
+		lives = Define.livesAtStart;
 	
 		// SETUP THE BOARD AND PREVIOUSBOARD ARRAYS */
 	
@@ -2563,7 +2576,7 @@ public class Game {
 		// DRAW THE WINDOW AND START THE MUSIC */
 	
 		drawwindow();
-		jukebox(MusicCommand.PLAY);
+		jukebox(Music.play);
 	}
 	
 	/********************************************/
@@ -2594,8 +2607,8 @@ public class Game {
 		
 		int row, col;
 	
-		for (row = 0; row <= (Define.BOARDROWS - 1); row++)
-			for (col = 0; col <= (Define.BOARDCOLS - 1); col++)
+		for (row = 0; row <= (Define.boardRows - 1); row++)
+			for (col = 0; col <= (Define.boardCols - 1); col++)
 				board[row][col] = Levels.levelbank[level][row][col];
 	}
 	
@@ -2621,8 +2634,8 @@ public class Game {
 	{
 		int row, col;
 	
-		for (row = 0; row <= (Define.BOARDROWS - 1); row++)
-			for (col = 0; col <= (Define.BOARDCOLS - 1); col++)
+		for (row = 0; row <= (Define.boardRows - 1); row++)
+			for (col = 0; col <= (Define.boardCols - 1); col++)
 				prevboard[row][col] = board[row][col];
 	}
 	
@@ -2758,7 +2771,7 @@ public class Game {
 		
 		int /*arow, acol,*/ brow = 0, bcol = 0, crow = 0, ccol = 0;
 		Tile atile, btile, ctile;
-		TileType /*atype,*/ btype, ctype;
+		Reaction /*atype,*/ btype, ctype;
 	
 		// CHECK THE DAY STATE BEFORE EACH MOVE */
 	
@@ -2772,28 +2785,28 @@ public class Game {
 	
 		switch (givendir) {
 	
-			case UP:
+			case up:
 				brow = a.row - 1;
 				crow = a.row - 2;
 				bcol = a.col;
 				ccol = a.col;
 				break;
 	
-			case DOWN:
+			case down:
 				brow = a.row + 1;
 				crow = a.row + 2;
 				bcol = a.col;
 				ccol = a.col;
 				break;
 	
-			case LEFT:
+			case left:
 				brow = a.row;
 				crow = a.row;
 				bcol = a.col - 1;
 				ccol = a.col - 2;
 				break;
 	
-			case RIGHT:
+			case right:
 				brow = a.row;
 				crow = a.row;
 				bcol = a.col + 1;
@@ -2816,7 +2829,7 @@ public class Game {
 	
 		// CASE 1: THE DESTINATION TILE IS BLOCKING */
 	
-		if (btype == TileType.blocking) {
+		if (btype == Reaction.blocking) {
 	
 			// THE FURBALL CANNOT PASS, DO NOTHING */
 	
@@ -2826,7 +2839,7 @@ public class Game {
 	
 		// CASE 2: THE DESTINATION TILE IS PASSING */
 	
-		if (btype == TileType.passing) {
+		if (btype == Reaction.passing) {
 	
 			// BACKUP THE BOARD BEFORE CHANGING IT */
 	
@@ -2835,7 +2848,7 @@ public class Game {
 			// PLAY A SOUND EFFECT IF APPROPRIATE */
 	
 			if (btile == Tile.hr)
-				soundeffect(SoundTitle.GETHEART);
+				soundeffect(Sound.getHeart);
 	
 			// MAKE THE MOVE */
 	
@@ -2859,7 +2872,7 @@ public class Game {
 	
 		// CASE 3: THE FURBALL WILL MOVE INTO THE OPEN DOOR */
 	
-		if (btype == TileType.finishing) {
+		if (btype == Reaction.finishing) {
 	
 			// BACKUP THE BOARD BEFORE CHANGING IT */
 	
@@ -2885,11 +2898,11 @@ public class Game {
 	
 		// CASE 4: THE DESTINATION TILE IS PUSHABLE */
 	
-		if (btype == TileType.pushable) {
+		if (btype == Reaction.pushable) {
 	
 			// MAKE SURE THE SPACE BEHIND THE BOX IS CLEAR */
 	
-			if (ctype != TileType.passing)
+			if (ctype != Reaction.passing)
 				return;  // THE MOVE IS NOT POSSIBLE, DO NOTHING
 	
 			// BACKUP THE BOARD BEFORE CHANGING IT */
@@ -2899,10 +2912,10 @@ public class Game {
 			// PLAY A SOUND EFFECT IF APPROPRIATE */
 	
 			if (ctile == Tile.hr)
-				soundeffect(SoundTitle.GETHEART);
+				soundeffect(Sound.getHeart);
 			
 			if (ctile == Tile.sk)
-				soundeffect(SoundTitle.BOXSINK);
+				soundeffect(Sound.boxSink);
 	
 			// MAKE THE MOVE */
 	
@@ -2996,7 +3009,7 @@ public class Game {
 		int opendoor, heartsleft, uncoveredsinks;
 		int row, col;
 		int doorrow = 0, doorcol = 0, /*fbrow, fbcol,*/ searchrow, searchcol;
-		TileDanger found;
+		Danger found;
 	
 		// CHECK 1: OPEN OR CLOSE THE DOOR IF NECESSARY */
 	
@@ -3006,8 +3019,8 @@ public class Game {
 		heartsleft = 0;
 		uncoveredsinks = 0;
 	
-		for (row = 0; row <= (Define.BOARDROWS - 1); row++) {
-			for (col = 0; col <= (Define.BOARDCOLS - 1); col++) {
+		for (row = 0; row <= (Define.boardRows - 1); row++) {
+			for (col = 0; col <= (Define.boardCols - 1); col++) {
 	
 				if (board[row][col] == Tile.dc) {
 					doorrow = row;
@@ -3036,7 +3049,7 @@ public class Game {
 		if (opendoor == 0 && heartsleft == 0 && uncoveredsinks == 0) {
 	
 			board[doorrow][doorcol] = Tile.dp;
-			soundeffect(SoundTitle.DOOROPENS);
+			soundeffect(Sound.doorOpens);
 	
 		}
 	
@@ -3062,10 +3075,10 @@ public class Game {
 		while (true) {
 			searchrow++;
 			found = getdanger(whatsat(searchrow, searchcol));
-			if (found == TileDanger.safe) {
+			if (found == Danger.safe) {
 				break;
 			}
-			if (found == TileDanger.attack) {
+			if (found == Danger.attack) {
 				killfurball();
 				return;
 			}
@@ -3077,10 +3090,10 @@ public class Game {
 		while (true) {
 			searchcol++;
 			found = getdanger(whatsat(searchrow, searchcol));
-			if (found == TileDanger.safe) {
+			if (found == Danger.safe) {
 				break;
 			}
-			if (found == TileDanger.attack) {
+			if (found == Danger.attack) {
 				killfurball();
 				return;
 			}
@@ -3092,10 +3105,10 @@ public class Game {
 		while (true) {
 			searchrow--;
 			found = getdanger(whatsat(searchrow, searchcol));
-			if (found == TileDanger.safe) {
+			if (found == Danger.safe) {
 				break;
 			}
-			if (found == TileDanger.attack) {
+			if (found == Danger.attack) {
 				killfurball();
 				return;
 			}
@@ -3107,10 +3120,10 @@ public class Game {
 		while (true) {
 			searchcol--;
 			found = getdanger(whatsat(searchrow, searchcol));
-			if (found == TileDanger.safe) {
+			if (found == Danger.safe) {
 				break;
 			}
-			if (found == TileDanger.attack) {
+			if (found == Danger.attack) {
 				killfurball();
 				return;
 			}
@@ -3164,8 +3177,8 @@ public class Game {
 		
 		int srow, scol;
 	
-		for (srow = 0; srow <= (Define.BOARDROWS - 1); srow++) {
-			for (scol = 0; scol <= (Define.BOARDCOLS - 1); scol++) {
+		for (srow = 0; srow <= (Define.boardRows - 1); srow++) {
+			for (scol = 0; scol <= (Define.boardCols - 1); scol++) {
 				if ((board[srow][scol] == Tile.fg) || (board[srow][scol] == Tile.fs)) {
 	
 					return new Location(srow, scol);
@@ -3225,8 +3238,8 @@ public class Game {
 	
 		if (row < 0            ) foundinvalid = true;
 		if (col < 0            ) foundinvalid = true;
-		if (row > Define.BOARDROWS - 1) foundinvalid = true;
-		if (col > Define.BOARDCOLS - 1) foundinvalid = true;
+		if (row > Define.boardRows - 1) foundinvalid = true;
+		if (col > Define.boardCols - 1) foundinvalid = true;
 	
 		if (foundinvalid)
 			return (Tile.os);
@@ -3260,7 +3273,7 @@ public class Game {
 	 * tile to be able to analyze a move.
 	 */
 	
-	TileType gettype(Tile giventile) {
+	Reaction gettype(Tile giventile) {
 		
 		switch (giventile) {
 	
@@ -3269,26 +3282,26 @@ public class Game {
 			case en:
 			case dc:
 			case os:
-				return TileType.blocking;
+				return Reaction.blocking;
 	
 			case gs:
 			case sk:
 			case hr:
-				return TileType.passing;
+				return Reaction.passing;
 	
 			case dp:
-				return TileType.finishing;
+				return Reaction.finishing;
 	
 			case bg:
 			case bs:
-				return TileType.pushable;
+				return Reaction.pushable;
 	
 			case fg:
 			case fs:
-				return TileType.furball;
+				return Reaction.furball;
 				
 			default:
-				return TileType.blocking;
+				return Reaction.blocking;
 	
 		}
 	}
@@ -3320,14 +3333,14 @@ public class Game {
 	 * location.
 	 */
 	
-	TileDanger getdanger(Tile giventile) {
+	Danger getdanger(Tile giventile) {
 		
 		switch (giventile) {
 	
 			case gs:
 			case sk:
 			case hr:
-				return TileDanger.open;
+				return Danger.open;
 	
 			case rk:
 			case wl:
@@ -3336,17 +3349,17 @@ public class Game {
 			case bg:
 			case bs:
 			case os:
-				return TileDanger.safe;
+				return Danger.safe;
 	
 			case en:
-				return TileDanger.attack;
+				return Danger.attack;
 	
 			case fg:
 			case fs:
-				return TileDanger.self;
+				return Danger.self;
 				
 			default:
-				return TileDanger.safe;
+				return Danger.safe;
 	
 		}
 	}
@@ -3381,7 +3394,7 @@ public class Game {
 	
 		// PLAY A SOUND EFFECT */
 	
-		soundeffect(SoundTitle.KILL);
+		soundeffect(Sound.kill);
 	
 		// HAVE THE PROGRAM PAUSE FOR A MOMENT */
 	
@@ -3406,7 +3419,7 @@ public class Game {
 		// DRAW THE WINDOW AND START THE MUSIC */
 	
 		drawwindow();
-		jukebox(MusicCommand.PLAY);
+		jukebox(Music.play);
 	}
 	
 	/********************************************/
@@ -3435,7 +3448,7 @@ public class Game {
 		
 		// PLAY A SOUND EFFECT */
 	
-		soundeffect(SoundTitle.LEVELDONE);
+		soundeffect(Sound.levelDone);
 	
 		// HAVE THE PROGRAM PAUSE FOR A MOMENT */
 	
@@ -3445,7 +3458,7 @@ public class Game {
 	
 		// IF THIS IS THE LAST LEVEL, THE GAME HAS BEEN WON */
 	
-		if (currentlevel == Define.NUMLEVELS - 1) {
+		if (currentlevel == Define.numLevels - 1) {
 			gamewon();
 			return;
 		}
@@ -3462,7 +3475,7 @@ public class Game {
 		// DRAW THE WINDOW AND START THE MUSIC */
 	
 		drawwindow();
-		jukebox(MusicCommand.PLAY);
+		jukebox(Music.play);
 	}
 	
 	/********************************************/
@@ -3485,8 +3498,8 @@ public class Game {
 		
 		int row, col;
 	
-		for (row = 0; row <= (Define.BOARDROWS - 1); row++)
-			for (col = 0; col <= (Define.BOARDCOLS - 1); col++)
+		for (row = 0; row <= (Define.boardRows - 1); row++)
+			for (col = 0; col <= (Define.boardCols - 1); col++)
 				drawtile(board[row][col], col, row);
 	}
 	
@@ -3547,8 +3560,8 @@ public class Game {
 		
 		int row, col;
 	
-		for (row = 0; row <= (Define.BOARDROWS - 1); row++)
-			for (col = 0; col <= (Define.BOARDCOLS - 1); col++)
+		for (row = 0; row <= (Define.boardRows - 1); row++)
+			for (col = 0; col <= (Define.boardCols - 1); col++)
 				if (board[row][col] != prevboard[row][col])
 					drawtile(board[row][col], col, row);
 	}

@@ -1,4 +1,6 @@
 package org.zootella.furball.original;
+
+import org.zootella.furball.kind.Tile;
 	
 public class Levels {
 	
