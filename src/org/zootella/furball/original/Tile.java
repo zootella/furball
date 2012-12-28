@@ -1,17 +1,32 @@
 package org.zootella.furball.original;
 
 public enum Tile {
-	GRASS,		// LISTED FIRST TO HAVE THE VALUE 0
-	FBONGRASS,
-	FBONSINK,
-	BOXONGRASS,
-	BOXONSINK,
-	ROCK,
-	WALL,
-	ENEMY,
-	SINK,
-	HEART,
-	DOORCLOSED,
-	DOOROPEN,
-	OUTSIDE		// USED TO DESCRIBE A POSITION OFF THE BOARD
+
+	/** Furball on grass. */
+	fg,
+	/** Furball on sink. */
+	fs,
+	/** Box on grass. */
+	bg,
+	/** Box on sink. */
+	bs,
+	/** Rock. */
+	rk,
+	/** Wall. */
+	wl,
+	/** Enemy. */
+	en,
+	/** Grass. */
+	gs,
+	/** Sink. */
+	sk,
+	/** Heart. */
+	hr,
+	/** Door closed. */
+	dc,
+	/** Door open. */
+	dp,
+
+	/** Outside, used to describe a position off the board. */
+	os
 }

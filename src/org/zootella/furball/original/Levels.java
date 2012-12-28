@@ -104,857 +104,857 @@ public class Levels {
 	
 	/* LEVELS */
 	
-	public static TileCode levelbank[][][] =
+	public static Tile levelbank[][][] =
 	{
 	
 		// 1, SPECIAL, FIRST
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.EN, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.EN},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.EN, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.EN},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.en, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.en},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.en, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.en},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.fg, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs}
 		},
 	
 		// 2, TUTORIAL, MAZE
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.HR, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK},
-			{TileCode.FG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.hr, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk},
+			{Tile.fg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk}
 		},
 	
 		// 3, TUTORIAL, COLLECT HEARTS
 	
 		{
-			{TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.FG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.HR, TileCode.HR, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.HR, TileCode.HR, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.HR, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK}
+			{Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.fg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.hr, Tile.hr, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.hr, Tile.hr, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.hr, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk}
 		},
 	
 		// 4, TUTORIAL, AVOID ENEMY
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.fg, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 5, TUTORIAL, PUSH BOX INTO SINK
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.SK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.SK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.SK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.sk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.sk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.sk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.fg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 6, TUTORIAL, MOVE BOX TO GET OUT
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.sk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.gs, Tile.fg, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 7, TUTORIAL, USE BOX TO BLOCK ENEMY
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.fg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 8, TUTORIAL, COLLECT HEART BY PUSING OVER BOX
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.SK, TileCode.RK},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.HR, TileCode.RK},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.HR, TileCode.RK, TileCode.EN, TileCode.RK},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.HR, TileCode.RK, TileCode.EN, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.FG, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.EN, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.sk, Tile.rk},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.sk, Tile.rk, Tile.hr, Tile.rk},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.rk, Tile.rk, Tile.sk, Tile.rk, Tile.hr, Tile.rk, Tile.en, Tile.rk},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.rk, Tile.rk, Tile.hr, Tile.rk, Tile.en, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.fg, Tile.gs, Tile.rk, Tile.rk, Tile.en, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk}
 		},
 	
 		// 9, TUTORIAL, SIMPLE LOGIC WALKAROUND
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.FG}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.gs, Tile.bg, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.gs, Tile.bg, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.fg}
 		},
 	
 		// 10, A, MEADOW
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.EN},
-			{TileCode.GS, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.EN, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.EN, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.HR},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.HR},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.EN, TileCode.GS, TileCode.HR},
-			{TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.FG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN}
+			{Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.hr, Tile.rk, Tile.gs, Tile.gs, Tile.en},
+			{Tile.gs, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.bg, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.en, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.en, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.hr},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.bg, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.hr},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.en, Tile.gs, Tile.hr},
+			{Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.en, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.fg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs},
+			{Tile.en, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.en}
 		},
 	
 		// 11, A, BUILDING
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.HR, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.RK},
-			{TileCode.GS, TileCode.FG, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.EN, TileCode.EN},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.EN}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.hr, Tile.hr, Tile.hr, Tile.hr, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.bg, Tile.bg, Tile.bg, Tile.hr, Tile.hr, Tile.hr, Tile.hr, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.bg, Tile.gs, Tile.bg, Tile.bg, Tile.bg, Tile.bg, Tile.bg, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.hr, Tile.bg, Tile.bg, Tile.bg, Tile.bg, Tile.bg, Tile.bg, Tile.bg, Tile.rk},
+			{Tile.gs, Tile.fg, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.bg, Tile.bg, Tile.bg, Tile.bg, Tile.bg, Tile.gs, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.en, Tile.en},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.en}
 		},
 	
 		// 12, A, PYRIMID
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.BG, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.FG, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.SK, TileCode.SK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.HR, TileCode.HR, TileCode.RK, TileCode.RK, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.HR, TileCode.RK, TileCode.RK, TileCode.RK}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.gs, Tile.hr, Tile.gs, Tile.hr, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.hr, Tile.hr, Tile.hr, Tile.hr, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.hr, Tile.hr, Tile.gs, Tile.hr, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.bg, Tile.gs, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.bg, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.fg, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.sk, Tile.sk, Tile.rk, Tile.rk, Tile.rk, Tile.hr, Tile.hr, Tile.rk, Tile.rk, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.hr, Tile.rk, Tile.rk, Tile.rk}
 		},
 	
 		// 13, A, PACKING
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS},
-			{TileCode.GS, TileCode.FG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.SK, TileCode.SK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.HR, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.SK, TileCode.SK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.bg, Tile.gs},
+			{Tile.gs, Tile.fg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.bg, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.sk, Tile.sk, Tile.rk, Tile.gs, Tile.rk, Tile.sk, Tile.rk, Tile.hr, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.sk, Tile.sk, Tile.rk, Tile.gs, Tile.rk, Tile.sk, Tile.rk, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 14, A, ROOMS
 	
 		{
-			{TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.HR, TileCode.RK, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.EN},
-			{TileCode.RK, TileCode.HR, TileCode.RK, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.RK, TileCode.HR, TileCode.RK},
-			{TileCode.EN, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.RK, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.RK, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.FG},
-			{TileCode.RK, TileCode.RK, TileCode.EN, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.EN, TileCode.RK, TileCode.RK}
+			{Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.hr, Tile.rk, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.en},
+			{Tile.rk, Tile.hr, Tile.rk, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.hr, Tile.gs, Tile.hr, Tile.gs, Tile.hr, Tile.gs, Tile.hr, Tile.rk, Tile.hr, Tile.rk},
+			{Tile.en, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.rk, Tile.hr, Tile.gs, Tile.hr, Tile.rk, Tile.hr, Tile.gs, Tile.hr, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.hr, Tile.gs, Tile.hr, Tile.gs, Tile.hr, Tile.gs, Tile.hr, Tile.fg},
+			{Tile.rk, Tile.rk, Tile.en, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.en, Tile.rk, Tile.rk}
 		},
 	
 		// 15, B, MEDOW
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.SK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR},
-			{TileCode.RK, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.EN, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.HR},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.HR},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.HR}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.sk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr},
+			{Tile.rk, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.en, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.fg, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.hr, Tile.hr, Tile.hr, Tile.hr, Tile.hr},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.gs, Tile.gs, Tile.hr, Tile.bg, Tile.bg, Tile.bg, Tile.hr},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.hr, Tile.hr, Tile.hr, Tile.hr, Tile.hr}
 		},
 	
 		// 16, B, MEADOW
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.BS, TileCode.BS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.RK, TileCode.BS, TileCode.BS},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.BS, TileCode.BS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.BS, TileCode.BS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.BS, TileCode.BS},
-			{TileCode.GS, TileCode.HR, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.BS, TileCode.BS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.BS, TileCode.BS},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK},
-			{TileCode.EN, TileCode.EN, TileCode.EN, TileCode.EN, TileCode.EN, TileCode.EN, TileCode.EN, TileCode.EN, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.EN, TileCode.EN, TileCode.EN, TileCode.EN, TileCode.EN, TileCode.EN, TileCode.EN, TileCode.EN, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.EN, TileCode.EN, TileCode.EN, TileCode.EN, TileCode.EN, TileCode.EN, TileCode.EN, TileCode.EN, TileCode.RK, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.bs, Tile.bs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.gs, Tile.rk, Tile.bs, Tile.bs},
+			{Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.bs, Tile.bs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.fg, Tile.gs, Tile.gs, Tile.rk, Tile.bs, Tile.bs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.bs, Tile.bs},
+			{Tile.gs, Tile.hr, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.bs, Tile.bs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.bs, Tile.bs},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk},
+			{Tile.en, Tile.en, Tile.en, Tile.en, Tile.en, Tile.en, Tile.en, Tile.en, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.en, Tile.en, Tile.en, Tile.en, Tile.en, Tile.en, Tile.en, Tile.en, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.en, Tile.en, Tile.en, Tile.en, Tile.en, Tile.en, Tile.en, Tile.en, Tile.rk, Tile.gs, Tile.gs}
 		},
 	
 		// 17, B, BUILDING
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.FG, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.EN, TileCode.GS},
-			{TileCode.GS, TileCode.EN, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.HR, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.fg, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.en, Tile.gs, Tile.gs, Tile.rk, Tile.en, Tile.gs},
+			{Tile.gs, Tile.en, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.hr, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 18, B, PYRAMID
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.RK, TileCode.RK, TileCode.BG, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.BG, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.SK, TileCode.SK, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.FG, TileCode.RK, TileCode.RK, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.RK, TileCode.RK}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.bg, Tile.rk, Tile.rk, Tile.bg, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.bg, Tile.bg, Tile.gs, Tile.gs, Tile.en, Tile.en, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.bg, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.bg, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.sk, Tile.sk, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.fg, Tile.rk, Tile.rk, Tile.hr, Tile.hr, Tile.hr, Tile.hr, Tile.rk, Tile.rk}
 		},
 	
 		// 19, B, PACKING
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.HR, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.HR, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.SK, TileCode.SK, TileCode.SK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.SK, TileCode.SK, TileCode.FS, TileCode.SK, TileCode.SK, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.SK, TileCode.SK, TileCode.SK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.bg, Tile.hr, Tile.bg, Tile.hr, Tile.bg, Tile.hr, Tile.bg, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.hr, Tile.bg, Tile.hr, Tile.bg, Tile.hr, Tile.bg, Tile.hr, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.bg, Tile.hr, Tile.bg, Tile.hr, Tile.bg, Tile.hr, Tile.bg, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.sk, Tile.sk, Tile.sk, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.sk, Tile.sk, Tile.fs, Tile.sk, Tile.sk, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.sk, Tile.sk, Tile.sk, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs}
 		},
 	
 		// 20, B, ROOMS
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.EN, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.FG, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.EN, TileCode.GS, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN},
-			{TileCode.RK, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.HR, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.HR, TileCode.HR, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.en, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.fg, Tile.rk, Tile.gs, Tile.rk, Tile.en, Tile.gs, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.en},
+			{Tile.rk, Tile.gs, Tile.bg, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.hr, Tile.hr, Tile.rk, Tile.gs, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.hr, Tile.hr, Tile.rk, Tile.gs, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.sk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk}
 		},
 	
 		// 21, B, ROOMS
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.HR, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK},
-			{TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.HR, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.FG, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.GS},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.en, Tile.gs, Tile.gs, Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.hr, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.rk},
+			{Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.hr, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.fg, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.gs},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk}
 		},
 	
 		// 22, C, MEADOW
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.EN},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR},
-			{TileCode.GS, TileCode.RK, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR},
-			{TileCode.GS, TileCode.HR, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.BG, TileCode.GS, TileCode.HR},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.HR},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.RK, TileCode.GS, TileCode.HR},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.RK},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.bg, Tile.gs, Tile.bg, Tile.en, Tile.gs, Tile.gs, Tile.en},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.fg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr},
+			{Tile.gs, Tile.rk, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr},
+			{Tile.gs, Tile.hr, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.hr},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.bg, Tile.gs, Tile.hr},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.hr},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.rk, Tile.gs, Tile.hr},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.rk},
+			{Tile.en, Tile.gs, Tile.gs, Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 23, C, MEADOW
 	
 		{
-			{TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.EN, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.HR, TileCode.EN},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.EN, TileCode.GS, TileCode.RK, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.BG, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS},
-			{TileCode.FG, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.EN, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.en, Tile.rk, Tile.gs, Tile.rk, Tile.hr, Tile.en},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.en, Tile.gs, Tile.rk, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.rk},
+			{Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.bg, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs},
+			{Tile.fg, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.en, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 24, C, BUILDING
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.EN},
-			{TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.HR, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK},
-			{TileCode.GS, TileCode.RK, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.BS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.BS, TileCode.RK, TileCode.BS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.BS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.en},
+			{Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.hr, Tile.gs, Tile.rk, Tile.gs, Tile.rk},
+			{Tile.gs, Tile.rk, Tile.gs, Tile.fg, Tile.gs, Tile.bs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.bs, Tile.rk, Tile.bs, Tile.rk, Tile.rk, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.bs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 25, C, BUILDING
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.BS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.BS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.BS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.RK, TileCode.BG, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.BS, TileCode.RK, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.BS, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.BS, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.BS, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.bs, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.bs, Tile.gs, Tile.gs, Tile.hr, Tile.gs, Tile.gs, Tile.bs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.rk, Tile.bg, Tile.rk, Tile.rk, Tile.rk, Tile.bs, Tile.rk, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.bs, Tile.gs, Tile.fg, Tile.gs, Tile.bs, Tile.gs, Tile.hr, Tile.gs, Tile.bs, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 26, C, PYRIMID
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.BS, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.BG, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.BG, TileCode.BS, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.BG, TileCode.BG, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.BG, TileCode.BS, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.BS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.FG, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.BS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.bs, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.bg, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.bg, Tile.bs, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.en, Tile.bg, Tile.bg, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.bg, Tile.bs, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.bg, Tile.bg, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.bg, Tile.bg, Tile.bs, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.bg, Tile.bg, Tile.bg, Tile.bg, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.fg, Tile.bg, Tile.bg, Tile.bg, Tile.bg, Tile.bs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk}
 		},
 	
 		// 27, C, PACKING
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.RK, TileCode.HR, TileCode.RK, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS},
-			{TileCode.HR, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.EN},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.SK, TileCode.SK, TileCode.SK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.HR, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.HR},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.SK, TileCode.SK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.HR},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.RK, TileCode.HR, TileCode.RK, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.rk, Tile.hr, Tile.rk, Tile.hr, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.fg, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs},
+			{Tile.hr, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.en},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.sk, Tile.sk, Tile.sk, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.hr, Tile.gs, Tile.gs, Tile.rk, Tile.sk, Tile.rk, Tile.sk, Tile.rk, Tile.gs, Tile.gs, Tile.hr},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.sk, Tile.sk, Tile.rk, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.en, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.hr},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.rk, Tile.hr, Tile.rk, Tile.en, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 28, C, ROOMS
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.BG, TileCode.BS, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.FG, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.BG, TileCode.RK, TileCode.HR, TileCode.HR, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.HR, TileCode.GS, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.EN, TileCode.RK, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.RK}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.bg, Tile.bs, Tile.bg, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.fg, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.bg, Tile.rk, Tile.hr, Tile.hr, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.en},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.gs, Tile.gs, Tile.rk, Tile.hr, Tile.gs, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.sk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.en, Tile.rk, Tile.hr, Tile.hr, Tile.hr, Tile.hr, Tile.hr, Tile.hr, Tile.rk}
 		},
 	
 		// 29, C, ROOMS
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.RK, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR},
-			{TileCode.GS, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.rk, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.hr},
+			{Tile.gs, Tile.gs, Tile.fg, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 30, D, MEADOW
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.EN, TileCode.RK, TileCode.GS, TileCode.HR},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.BG, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.FG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.BG, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.EN},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.en, Tile.rk, Tile.gs, Tile.hr},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.bg, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.fg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.bg, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.en},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.sk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.en, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.en, Tile.gs, Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 31, D, MEADOW
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.SK, TileCode.GS, TileCode.RK, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.RK, TileCode.GS, TileCode.BS},
-			{TileCode.SK, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.SK},
-			{TileCode.SK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK},
-			{TileCode.SK, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.SK},
-			{TileCode.SK, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.SK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.FG, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.HR, TileCode.EN, TileCode.HR, TileCode.EN, TileCode.HR, TileCode.GS, TileCode.RK, TileCode.RK}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.sk, Tile.gs, Tile.rk, Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.rk, Tile.gs, Tile.bs},
+			{Tile.sk, Tile.gs, Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.gs, Tile.sk},
+			{Tile.sk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.sk},
+			{Tile.sk, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.sk},
+			{Tile.sk, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.sk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.fg, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.gs, Tile.bg, Tile.gs, Tile.hr, Tile.gs, Tile.hr, Tile.gs, Tile.bg, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.hr, Tile.en, Tile.hr, Tile.en, Tile.hr, Tile.gs, Tile.rk, Tile.rk}
 		},
 	
 		// 32, D, MEADOW
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.BG, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.HR, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.FG, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.HR, TileCode.SK, TileCode.GS, TileCode.EN, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.EN, TileCode.GS, TileCode.SK, TileCode.HR, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.BG, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.BG, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.bg, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.hr, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.fg, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.hr, Tile.sk, Tile.gs, Tile.en, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.en, Tile.gs, Tile.sk, Tile.hr, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.bg, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.bg, Tile.bg, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 33, D, MEADOW
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.EN, TileCode.SK, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.SK, TileCode.EN},
-			{TileCode.RK, TileCode.EN, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.EN, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.EN, TileCode.SK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.EN, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.en, Tile.sk, Tile.gs, Tile.sk, Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.gs, Tile.sk, Tile.en},
+			{Tile.rk, Tile.en, Tile.gs, Tile.sk, Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.gs, Tile.en, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.en, Tile.sk, Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.en, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.hr, Tile.gs, Tile.hr, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.bg, Tile.hr, Tile.bg, Tile.gs, Tile.fg, Tile.gs, Tile.bg, Tile.hr, Tile.bg, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.bg, Tile.gs, Tile.gs}
 		},
 	
 		// 34, D, BUILDING
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.SK, TileCode.RK, TileCode.GS, TileCode.EN, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.HR, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.SK, TileCode.RK, TileCode.HR, TileCode.HR, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.BG, TileCode.BG},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.fg, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.sk, Tile.rk, Tile.gs, Tile.en, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.hr, Tile.hr, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.sk, Tile.rk, Tile.hr, Tile.hr, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.bg, Tile.bg, Tile.bg, Tile.bg, Tile.bg},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 35, D, PRYIMID
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.SK, TileCode.BG, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.SK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.FG, TileCode.HR, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.EN, TileCode.GS, TileCode.HR, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.sk, Tile.bg, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.bg, Tile.sk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.rk, Tile.rk, Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.fg, Tile.hr, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.en, Tile.gs, Tile.hr, Tile.bg, Tile.gs, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.hr, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk}
 		},
 	
 		// 36, D, PACKING
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.SK, TileCode.HR, TileCode.HR, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.HR, TileCode.HR, TileCode.SK, TileCode.RK},
-			{TileCode.RK, TileCode.SK, TileCode.SK, TileCode.HR, TileCode.SK, TileCode.HR, TileCode.SK, TileCode.HR, TileCode.SK, TileCode.SK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.sk, Tile.hr, Tile.hr, Tile.rk, Tile.gs, Tile.rk, Tile.hr, Tile.hr, Tile.sk, Tile.rk},
+			{Tile.rk, Tile.sk, Tile.sk, Tile.hr, Tile.sk, Tile.hr, Tile.sk, Tile.hr, Tile.sk, Tile.sk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.fg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 37, D, ROOMS
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.BG, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.FG, TileCode.SK, TileCode.SK, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.BG, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.BG, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.RK, TileCode.GS, TileCode.BG, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.rk, Tile.rk, Tile.sk, Tile.rk, Tile.rk, Tile.gs, Tile.bg, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.sk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.sk, Tile.gs, Tile.fg, Tile.sk, Tile.sk, Tile.gs, Tile.sk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.sk, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.bg, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.bg, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.sk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.rk, Tile.hr, Tile.hr, Tile.hr, Tile.rk, Tile.gs, Tile.bg, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.hr, Tile.hr, Tile.hr, Tile.rk, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 38, E, MEADOW
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.HR, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.HR},
-			{TileCode.HR, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.HR},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.EN, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.BG, TileCode.FG, TileCode.BG, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.EN, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.HR, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.HR},
-			{TileCode.HR, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.HR}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.hr, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.hr},
+			{Tile.hr, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.hr},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.en, Tile.rk, Tile.gs, Tile.gs, Tile.en, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.hr, Tile.gs, Tile.bg, Tile.fg, Tile.bg, Tile.gs, Tile.hr, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.gs, Tile.gs, Tile.rk, Tile.en, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.hr, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.hr},
+			{Tile.hr, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.hr}
 		},
 	
 		// 39, E, MEADOW
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.BG, TileCode.GS, TileCode.HR, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.FG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS},
-			{TileCode.EN, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG},
-			{TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.bg, Tile.gs, Tile.hr, Tile.hr, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.fg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.gs, Tile.hr, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.sk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.gs},
+			{Tile.en, Tile.gs, Tile.hr, Tile.gs, Tile.hr, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.bg},
+			{Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.sk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.sk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.sk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 40, E, MEADOW
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.HR, TileCode.BG, TileCode.HR, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.EN, TileCode.GS, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.HR, TileCode.HR, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.HR, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.HR, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.GS},
-			{TileCode.HR, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.EN, TileCode.RK, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.GS, TileCode.RK, TileCode.GS},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.GS, TileCode.RK, TileCode.RK}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.hr, Tile.hr, Tile.hr, Tile.gs, Tile.gs, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.hr, Tile.bg, Tile.hr, Tile.gs, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.hr, Tile.hr, Tile.hr, Tile.en, Tile.gs, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.gs, Tile.en, Tile.gs, Tile.gs, Tile.bg, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.hr, Tile.hr, Tile.bg, Tile.hr, Tile.bg, Tile.gs, Tile.gs, Tile.fg, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.hr, Tile.gs, Tile.gs, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.hr, Tile.gs, Tile.gs, Tile.hr, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.en, Tile.gs, Tile.gs},
+			{Tile.hr, Tile.hr, Tile.hr, Tile.hr, Tile.en, Tile.rk, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.hr, Tile.hr, Tile.gs, Tile.rk, Tile.gs},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.hr, Tile.gs, Tile.hr, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.hr, Tile.hr, Tile.gs, Tile.rk, Tile.rk}
 		},
 	
 		// 41, E, MEADOW
 	
 		{
-			{TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.FG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.EN, TileCode.EN, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.HR, TileCode.BG, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.HR, TileCode.GS},
-			{TileCode.GS, TileCode.BG, TileCode.HR, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.BG, TileCode.GS},
-			{TileCode.GS, TileCode.BG, TileCode.HR, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.HR, TileCode.GS},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.GS, TileCode.BS, TileCode.BG, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.BS, TileCode.GS},
-			{TileCode.GS, TileCode.BG, TileCode.BS, TileCode.BS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BS, TileCode.BG, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.EN, TileCode.EN, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.fg, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.en, Tile.en, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.hr, Tile.bg, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.hr, Tile.gs},
+			{Tile.gs, Tile.bg, Tile.hr, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.bg, Tile.gs},
+			{Tile.gs, Tile.bg, Tile.hr, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.hr, Tile.gs},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.en},
+			{Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.en},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.gs, Tile.bs, Tile.bg, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.bs, Tile.gs},
+			{Tile.gs, Tile.bg, Tile.bs, Tile.bs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bs, Tile.bg, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.en, Tile.en, Tile.rk, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 42, E, PYRAMID
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.GS, TileCode.EN},
-			{TileCode.GS, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.SK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.GS},
-			{TileCode.SK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.fg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.bg, Tile.hr, Tile.bg, Tile.hr, Tile.bg, Tile.hr, Tile.bg, Tile.hr, Tile.bg, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.bg, Tile.hr, Tile.bg, Tile.hr, Tile.bg, Tile.hr, Tile.bg, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.hr, Tile.bg, Tile.hr, Tile.bg, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.hr, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.en},
+			{Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.gs, Tile.sk, Tile.gs, Tile.gs, Tile.gs, Tile.en},
+			{Tile.en, Tile.gs, Tile.gs, Tile.sk, Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.gs, Tile.gs, Tile.en},
+			{Tile.gs, Tile.gs, Tile.sk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.sk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.gs},
+			{Tile.sk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.sk}
 		},
 	
 		// 43, E, PACKING
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.SK, TileCode.SK, TileCode.SK, TileCode.SK, TileCode.SK, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.SK, TileCode.BS, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.EN, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.EN, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.fg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.sk, Tile.rk, Tile.sk, Tile.rk, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.sk, Tile.sk, Tile.sk, Tile.sk, Tile.sk, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.sk, Tile.rk, Tile.sk, Tile.bs, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.en, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.en, Tile.gs}
 		},
 	
 		// 44, E, PACKING
 	
 		{
-			{TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.FG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.BG, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.SK, TileCode.RK},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.SK, TileCode.RK},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.RK, TileCode.HR, TileCode.RK, TileCode.RK, TileCode.EN, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.fg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.bg, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.sk, Tile.sk, Tile.rk},
+			{Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.rk, Tile.gs, Tile.gs, Tile.sk, Tile.sk, Tile.rk},
+			{Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.bg, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.rk, Tile.hr, Tile.rk, Tile.rk, Tile.en, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 45, E, ROOMS
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.RK, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN},
-			{TileCode.GS, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.BS, TileCode.RK, TileCode.SK, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.GS},
-			{TileCode.GS, TileCode.BG, TileCode.FG, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.HR, TileCode.BG, TileCode.GS},
-			{TileCode.GS, TileCode.HR, TileCode.BG, TileCode.BG, TileCode.BS, TileCode.RK, TileCode.SK, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.GS},
-			{TileCode.EN, TileCode.SK, TileCode.GS, TileCode.SK, TileCode.EN, TileCode.RK, TileCode.EN, TileCode.BS, TileCode.GS, TileCode.BS, TileCode.EN},
-			{TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK},
-			{TileCode.EN, TileCode.BS, TileCode.GS, TileCode.BS, TileCode.EN, TileCode.RK, TileCode.EN, TileCode.SK, TileCode.GS, TileCode.SK, TileCode.EN},
-			{TileCode.GS, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.SK, TileCode.RK, TileCode.BS, TileCode.HR, TileCode.BG, TileCode.HR, TileCode.GS},
-			{TileCode.GS, TileCode.HR, TileCode.HR, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR, TileCode.HR, TileCode.BG, TileCode.GS},
-			{TileCode.GS, TileCode.HR, TileCode.BG, TileCode.GS, TileCode.SK, TileCode.RK, TileCode.BS, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.GS},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.RK, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl},
+			{Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.rk, Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.en},
+			{Tile.gs, Tile.hr, Tile.hr, Tile.hr, Tile.bs, Tile.rk, Tile.sk, Tile.hr, Tile.hr, Tile.hr, Tile.gs},
+			{Tile.gs, Tile.bg, Tile.fg, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.hr, Tile.bg, Tile.gs},
+			{Tile.gs, Tile.hr, Tile.bg, Tile.bg, Tile.bs, Tile.rk, Tile.sk, Tile.hr, Tile.hr, Tile.hr, Tile.gs},
+			{Tile.en, Tile.sk, Tile.gs, Tile.sk, Tile.en, Tile.rk, Tile.en, Tile.bs, Tile.gs, Tile.bs, Tile.en},
+			{Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk},
+			{Tile.en, Tile.bs, Tile.gs, Tile.bs, Tile.en, Tile.rk, Tile.en, Tile.sk, Tile.gs, Tile.sk, Tile.en},
+			{Tile.gs, Tile.hr, Tile.hr, Tile.hr, Tile.sk, Tile.rk, Tile.bs, Tile.hr, Tile.bg, Tile.hr, Tile.gs},
+			{Tile.gs, Tile.hr, Tile.hr, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.hr, Tile.hr, Tile.bg, Tile.gs},
+			{Tile.gs, Tile.hr, Tile.bg, Tile.gs, Tile.sk, Tile.rk, Tile.bs, Tile.hr, Tile.hr, Tile.hr, Tile.gs},
+			{Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.rk, Tile.en, Tile.gs, Tile.gs, Tile.gs, Tile.en}
 		},
 	
 		// 46, E, ROOMS
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.SK, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.EN},
-			{TileCode.GS, TileCode.GS, TileCode.HR, TileCode.BG, TileCode.HR, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.EN},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN},
-			{TileCode.RK, TileCode.HR, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.BG, TileCode.RK, TileCode.HR, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.BG, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.BG},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.HR, TileCode.RK, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.BG, TileCode.HR, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.EN, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.sk, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.hr, Tile.gs, Tile.en},
+			{Tile.gs, Tile.gs, Tile.hr, Tile.bg, Tile.hr, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.en},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.hr, Tile.gs, Tile.en},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.en},
+			{Tile.rk, Tile.hr, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.bg, Tile.rk, Tile.hr, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.fg, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.bg, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.bg},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.hr, Tile.rk, Tile.bg, Tile.gs, Tile.bg, Tile.bg, Tile.hr, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.en, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 47, E, ROOMS
 	
 		{
-			{TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.SK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.EN, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.FG, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.RK},
-			{TileCode.GS, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.SK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.EN, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK}
+			{Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.sk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.en, Tile.rk, Tile.gs, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.fg, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.rk},
+			{Tile.gs, Tile.bg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.sk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.en, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.rk}
 		},
 	
 		// 48, SPECIAL, BEFORE FINAL
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL},
-			{TileCode.EN, TileCode.EN, TileCode.EN, TileCode.EN, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.FG},
-			{TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.BG, TileCode.BG, TileCode.GS, TileCode.GS},
-			{TileCode.EN, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.BG, TileCode.HR},
-			{TileCode.EN, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.HR},
-			{TileCode.RK, TileCode.RK, TileCode.SK, TileCode.SK, TileCode.SK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.HR},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.SK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK},
-			{TileCode.EN, TileCode.RK, TileCode.SK, TileCode.SK, TileCode.SK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK},
-			{TileCode.EN, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.HR},
-			{TileCode.EN, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.HR},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.RK},
-			{TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.HR, TileCode.HR, TileCode.HR, TileCode.HR}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl},
+			{Tile.en, Tile.en, Tile.en, Tile.en, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.fg},
+			{Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.bg, Tile.bg, Tile.gs, Tile.gs},
+			{Tile.en, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.bg, Tile.bg, Tile.hr},
+			{Tile.en, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.bg, Tile.hr},
+			{Tile.rk, Tile.rk, Tile.sk, Tile.sk, Tile.sk, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.hr},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.sk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk},
+			{Tile.en, Tile.rk, Tile.sk, Tile.sk, Tile.sk, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk},
+			{Tile.en, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.hr},
+			{Tile.en, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.hr},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.bg, Tile.gs, Tile.rk},
+			{Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.hr, Tile.hr, Tile.hr, Tile.hr}
 		},
 	
 		// 49, SPECIAL, (|<)
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DO, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dp, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.rk, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.rk, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.fg, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs}
 		},
 	
 		// 50, SPECIAL, FINAL
 	
 		{
-			{TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.DC, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL, TileCode.WL},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.FG, TileCode.GS, TileCode.RK, TileCode.EN, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.GS, TileCode.HR, TileCode.BG, TileCode.BG, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.HR, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.HR, TileCode.HR, TileCode.HR},
-			{TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.BG, TileCode.BG, TileCode.HR},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.SK, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS},
-			{TileCode.GS, TileCode.HR, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.BG, TileCode.BG, TileCode.HR},
-			{TileCode.GS, TileCode.GS, TileCode.GS, TileCode.GS, TileCode.SK, TileCode.GS, TileCode.SK, TileCode.RK, TileCode.HR, TileCode.HR, TileCode.HR},
-			{TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.GS, TileCode.RK, TileCode.RK, TileCode.RK, TileCode.RK},
-			{TileCode.HR, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.BG, TileCode.GS, TileCode.HR, TileCode.GS},
-			{TileCode.HR, TileCode.GS, TileCode.GS, TileCode.RK, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.EN},
-			{TileCode.HR, TileCode.HR, TileCode.EN, TileCode.RK, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.GS, TileCode.HR, TileCode.GS}
+			{Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.dc, Tile.wl, Tile.wl, Tile.wl, Tile.wl, Tile.wl},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.fg, Tile.gs, Tile.rk, Tile.en, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.gs, Tile.hr, Tile.bg, Tile.bg, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.hr, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.hr, Tile.hr, Tile.hr},
+			{Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.bg, Tile.bg, Tile.hr},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.rk, Tile.sk, Tile.gs, Tile.sk, Tile.gs, Tile.gs, Tile.gs, Tile.gs},
+			{Tile.gs, Tile.hr, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.gs, Tile.rk, Tile.bg, Tile.bg, Tile.hr},
+			{Tile.gs, Tile.gs, Tile.gs, Tile.gs, Tile.sk, Tile.gs, Tile.sk, Tile.rk, Tile.hr, Tile.hr, Tile.hr},
+			{Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk, Tile.gs, Tile.rk, Tile.rk, Tile.rk, Tile.rk},
+			{Tile.hr, Tile.gs, Tile.gs, Tile.rk, Tile.gs, Tile.hr, Tile.gs, Tile.bg, Tile.gs, Tile.hr, Tile.gs},
+			{Tile.hr, Tile.gs, Tile.gs, Tile.rk, Tile.hr, Tile.gs, Tile.hr, Tile.gs, Tile.hr, Tile.gs, Tile.en},
+			{Tile.hr, Tile.hr, Tile.en, Tile.rk, Tile.gs, Tile.hr, Tile.gs, Tile.hr, Tile.gs, Tile.hr, Tile.gs}
 		}
 	
 	};
