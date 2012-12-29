@@ -27,10 +27,11 @@ public class FurballActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_furball);
 		
-		instance = this;
-		
-		Game.initialize(Define.initialStartingLevel);
+		game = new Game(this);
+		game.initialize(Define.initialStartingLevel);
 	}
+	
+	private Game game;
 
 	private ImageView board[][];
 	private int square;
@@ -120,11 +121,11 @@ public class FurballActivity extends Activity {
 		return BitmapFactory.decodeResource(this.getResources(), id);
 	}
 	
-	public static Tile screen[][] = new Tile[Define.boardRows][Define.boardCols];
+	public Tile screen[][] = new Tile[Define.boardRows][Define.boardCols];
 	
-	private static FurballActivity instance;
+	private FurballActivity instance;
 	
-	public static FurballActivity instance() { return instance; }
+	public FurballActivity instance() { return instance; }
 	
 	
 	public void updateBoard() {
@@ -132,9 +133,9 @@ public class FurballActivity extends Activity {
 		for (int r = 0; r < Define.boardRows; r++) {
 			for (int c = 0; c < Define.boardCols; c++) {
 				
-				if (screen[r][c] != Game.board[r][c]) {
+				if (screen[r][c] != game.board[r][c]) {
 					
-					screen[r][c] = Game.board[r][c];
+					screen[r][c] = game.board[r][c];
 
 					
 					
@@ -170,28 +171,28 @@ public class FurballActivity extends Activity {
 			        	startx = x;
 			        	starty = y;
 			        	move(puckx + 1, pucky);//right
-			        	Game.moveFurball(Direction.right);
+			        	game.moveFurball(Direction.right);
 			        }
 			        
 			        if (dx < -square) {
 			        	startx = x;
 			        	starty = y;
 			        	move(puckx - 1, pucky);//left
-			        	Game.moveFurball(Direction.left);
+			        	game.moveFurball(Direction.left);
 			        }
 			        
 			        if (dy > square) {
 			        	startx = x;
 			        	starty = y;
 			        	move(puckx, pucky + 1);//down
-			        	Game.moveFurball(Direction.down);
+			        	game.moveFurball(Direction.down);
 			        }
 			        
 			        if (dy < -square) {
 			        	startx = x;
 			        	starty = y;
 			        	move(puckx, pucky - 1);//up
-			        	Game.moveFurball(Direction.up);
+			        	game.moveFurball(Direction.up);
 			        }
 			        
 			        break;

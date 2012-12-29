@@ -7,39 +7,46 @@ import org.zootella.furball.kind.Location;
 import org.zootella.furball.kind.Reaction;
 import org.zootella.furball.kind.Sound;
 import org.zootella.furball.kind.Tile;
+
+import android.app.Activity;
 	
 public class Game {
 	
-	// Settings
-	public static boolean soundEffectsOn;
-	public static boolean startupHelp;
+	public Game(FurballActivity activity) {
+		this.activity = activity;
+	}
+	private final FurballActivity activity;
 	
-	public static void gameMain() {
+	// Settings
+	public boolean soundEffectsOn;
+	public boolean startupHelp;
+	
+	public void gameMain() {
 		
 		initialize(Define.initialStartingLevel); // START AT LEVEL 0
 	}
 	
-	public static void drawTile(Tile tilename, int xgrid, int ygrid) {
+	public void drawTile(Tile tilename, int xgrid, int ygrid) {
 		
 	}
 	
-	public static void soundEffect(Sound sound) {
+	public void soundEffect(Sound sound) {
 	}
 	
-	public static void menuNewGame() {
+	public void menuNewGame() {
 		
 		initialize(Define.initialStartingLevel);
 	}
 	
-	public static void menuGiveUp() {
+	public void menuGiveUp() {
 		
 		killFurball();
 	}
 	
-	public static void menuEnterLevelCode() {
+	public void menuEnterLevelCode() {
 	}
 	
-	public static int lookupLevelCode(String inputstring) {
+	public int lookupLevelCode(String inputstring) {
 		
 		int levelscan;
 	
@@ -65,7 +72,7 @@ public class Game {
 	 * starting the game from the first level.  There are no 
 	 * arguments or a return value.
 	 */
-	public static void gameOver() {
+	public void gameOver() {
 
 		// RESTART THE GAME FROM THE FIRST LEVEL
 		initialize(Define.initialStartingLevel);
@@ -78,17 +85,17 @@ public class Game {
 	 * the game from the first level.  There are no arguments or a 
 	 * return value.
 	 */
-	public static void gameWon() {
+	public void gameWon() {
 	
 		// RESTART THE GAME FROM THE FIRST LEVEL
 		initialize(Define.initialStartingLevel);
 	}
 	
-	public static Tile board[][] = new Tile[Define.boardRows][Define.boardCols];
-	public static Tile prevBoard[][] = new Tile[Define.boardRows][Define.boardCols];
-	public static int currentLevel, lives;
+	public Tile board[][] = new Tile[Define.boardRows][Define.boardCols];
+	public Tile prevBoard[][] = new Tile[Define.boardRows][Define.boardCols];
+	public int currentLevel, lives;
 	
-	public static void initialize(int startinglevel) {
+	public void initialize(int startinglevel) {
 		
 		// SET THE STARTING LEVEL AND INITIAL LIVES */
 		currentLevel = startinglevel;
@@ -102,7 +109,7 @@ public class Game {
 		drawWindow();
 	}
 	
-	public static void loadLevel(int level) {
+	public void loadLevel(int level) {
 		
 		int row, col;
 	
@@ -116,7 +123,7 @@ public class Game {
 	 * from the board array into the prevboard array.  There are no 
 	 * arguments or a return value.
 	 */
-	public static void saveBoard() {
+	public void saveBoard() {
 		
 		int row, col;
 	
@@ -125,7 +132,7 @@ public class Game {
 				prevBoard[row][col] = board[row][col];
 	}
 	
-	public static void moveFurball(Direction givendir) {
+	public void moveFurball(Direction givendir) {
 		
 		int /*arow, acol,*/ brow = 0, bcol = 0, crow = 0, ccol = 0;
 		Tile atile, btile, ctile;
@@ -271,7 +278,7 @@ public class Game {
 		}
 	}
 	
-	public static void runChecks() {
+	public void runChecks() {
 		
 		int opendoor, heartsleft, uncoveredsinks;
 		int row, col;
@@ -389,7 +396,7 @@ public class Game {
 		}
 	}
 	
-	public static Location findFurball() {
+	public Location findFurball() {
 		
 		int srow, scol;
 	
@@ -405,7 +412,7 @@ public class Game {
 		return new Location(-1, -1);
 	}
 	
-	public static Tile whatsAt(int row, int col) {
+	public Tile whatsAt(int row, int col) {
 		
 		boolean foundinvalid;
 	
@@ -424,7 +431,7 @@ public class Game {
 		return (board[row][col]);
 	}
 	
-	public static Reaction getType(Tile giventile) {
+	public Reaction getType(Tile giventile) {
 		
 		switch (giventile) {
 	
@@ -456,7 +463,7 @@ public class Game {
 		}
 	}
 	
-	public static Danger getDanger(Tile giventile) {
+	public Danger getDanger(Tile giventile) {
 		
 		switch (giventile) {
 	
@@ -486,7 +493,7 @@ public class Game {
 		}
 	}
 	
-	public static void killFurball() {
+	public void killFurball() {
 		
 		// DISPLAY THE LETHAL BOARD */
 		updateBoard();
@@ -511,7 +518,7 @@ public class Game {
 		drawWindow();
 	}
 	
-	public static void finishedLevel() {
+	public void finishedLevel() {
 		
 		// PLAY A SOUND EFFECT */
 		soundEffect(Sound.levelDone);
@@ -535,7 +542,7 @@ public class Game {
 		drawWindow();
 	}
 	
-	public static void drawBoard() {
+	public void drawBoard() {
 		
 		int row, col;
 		for (row = 0; row <= (Define.boardRows - 1); row++)
@@ -543,14 +550,14 @@ public class Game {
 				drawTile(board[row][col], col, row);
 	}
 	
-	public static void drawWindow() {
+	public void drawWindow() {
 		
 		drawBoard();
 	}
 	
-	public static void updateBoard() {
+	public void updateBoard() {
 		
-		FurballActivity.instance().updateBoard();
+		activity.updateBoard();
 		
 		/*
 		
