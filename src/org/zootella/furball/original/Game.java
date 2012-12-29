@@ -1,5 +1,6 @@
 package org.zootella.furball.original;
 
+import org.zootella.furball.FurballActivity;
 import org.zootella.furball.kind.Danger;
 import org.zootella.furball.kind.Direction;
 import org.zootella.furball.kind.Location;
@@ -19,6 +20,7 @@ public class Game {
 	}
 	
 	public static void drawTile(Tile tilename, int xgrid, int ygrid) {
+		
 	}
 	
 	public static void soundEffect(Sound sound) {
@@ -548,11 +550,16 @@ public class Game {
 	
 	public static void updateBoard() {
 		
+		FurballActivity.instance().updateBoard();
+		
+		/*
+		
 		int row, col;
 	
 		for (row = 0; row <= (Define.boardRows - 1); row++)
 			for (col = 0; col <= (Define.boardCols - 1); col++)
 				if (board[row][col] != prevBoard[row][col])
 					drawTile(board[row][col], col, row);
+					*/
 	}
 }

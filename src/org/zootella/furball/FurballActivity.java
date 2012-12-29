@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.zootella.furball.R;
+import org.zootella.furball.kind.Direction;
 import org.zootella.furball.kind.Tile;
 import org.zootella.furball.original.Define;
 import org.zootella.furball.original.Game;
@@ -26,11 +27,12 @@ public class FurballActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_furball);
 		
+		instance = this;
+		
 		Game.initialize(Define.initialStartingLevel);
 	}
 
 	private ImageView board[][];
-	private final int boardSize = 12;
 	private int square;
 	
 	private RelativeLayout layout;
@@ -52,34 +54,22 @@ public class FurballActivity extends Activity {
 		int w = layout.getWidth();//800, and these are real pixels, apparently
 		int h = layout.getHeight();//1097
 		
-		int limit = Math.min(w, h);//find the smallest dimension
-		square = limit / boardSize;//size of each square
-		boardx = (w - (square * boardSize)) / 2;
-		boardy = (h - (square * boardSize)) / 2;
+		square = w / Define.boardCols;//size of each square
+		boardx = (w - (square * Define.boardCols)) / 2;
+		boardy = (h - (square * Define.boardRows)) / 2;
 		
-		boolean checker = false;
-		
-		board = new ImageView[boardSize][boardSize];
-		for (int squarex = 0; squarex < boardSize; squarex++) {
-			for (int squarey = 0; squarey < boardSize; squarey++) {
-				
-				int color;
-				if (checker) {
-					color = Color.BLACK;
-				} else {
-					color = Color.RED;
-				}
-				checker = !checker;
+		board = new ImageView[Define.boardRows][Define.boardCols];
+		for (int r = 0; r < Define.boardRows; r++) {
+			for (int c = 0; c < Define.boardCols; c++) {
 				
 				ImageView image = new ImageView(this);
-				image.setBackgroundColor(color);
 				
 				RelativeLayout.LayoutParams p = new RelativeLayout.LayoutParams(square, square);//w, h
-				p.leftMargin = boardx + (squarex * square);//x
-				p.topMargin = boardy + (squarey * square);//y
+				p.leftMargin = boardx + (c * square);//x
+				p.topMargin = boardy + (r * square);//y
 				layout.addView(image, p);
 				
-				board[squarex][squarey] = image;
+				board[r][c] = image;
 			}
 		}
 		
@@ -132,7 +122,12 @@ public class FurballActivity extends Activity {
 	
 	public static Tile screen[][] = new Tile[Define.boardRows][Define.boardCols];
 	
-	private void updateBoard() {
+	private static FurballActivity instance;
+	
+	public static FurballActivity instance() { return instance; }
+	
+	
+	public void updateBoard() {
 		
 		for (int r = 0; r < Define.boardRows; r++) {
 			for (int c = 0; c < Define.boardCols; c++) {
@@ -175,24 +170,28 @@ public class FurballActivity extends Activity {
 			        	startx = x;
 			        	starty = y;
 			        	move(puckx + 1, pucky);//right
+			        	Game.moveFurball(Direction.right);
 			        }
 			        
 			        if (dx < -square) {
 			        	startx = x;
 			        	starty = y;
 			        	move(puckx - 1, pucky);//left
+			        	Game.moveFurball(Direction.left);
 			        }
 			        
 			        if (dy > square) {
 			        	startx = x;
 			        	starty = y;
 			        	move(puckx, pucky + 1);//down
+			        	Game.moveFurball(Direction.down);
 			        }
 			        
 			        if (dy < -square) {
 			        	startx = x;
 			        	starty = y;
 			        	move(puckx, pucky - 1);//up
+			        	Game.moveFurball(Direction.up);
 			        }
 			        
 			        break;
