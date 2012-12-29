@@ -13,7 +13,7 @@ public class Game {
 	public static boolean soundEffectsOn;
 	public static boolean startupHelp;
 	
-	public static void winMain() {
+	public static void gameMain() {
 		
 		initialize(Define.initialStartingLevel); // START AT LEVEL 0
 	}
@@ -82,8 +82,8 @@ public class Game {
 		initialize(Define.initialStartingLevel);
 	}
 	
-	public static Tile board[][];
-	public static Tile prevBoard[][];
+	public static Tile board[][] = new Tile[Define.boardRows][Define.boardCols];
+	public static Tile prevBoard[][] = new Tile[Define.boardRows][Define.boardCols];
 	public static int currentLevel, lives;
 	
 	public static void initialize(int startinglevel) {
