@@ -7,13 +7,13 @@ import org.zootella.furball.kind.Location;
 import org.zootella.furball.kind.Reaction;
 import org.zootella.furball.kind.Sound;
 import org.zootella.furball.kind.Tile;
-
-import android.app.Activity;
 	
 public class Game {
 	
 	public Game(FurballActivity activity) {
 		this.activity = activity;
+		
+		initialize(Define.initialStartingLevel);
 	}
 	private final FurballActivity activity;
 	
@@ -92,7 +92,7 @@ public class Game {
 	}
 	
 	public Tile board[][] = new Tile[Define.boardRows][Define.boardCols];
-	public Tile prevBoard[][] = new Tile[Define.boardRows][Define.boardCols];
+//	public Tile prevBoard[][] = new Tile[Define.boardRows][Define.boardCols];
 	public int currentLevel, lives;
 	
 	public void initialize(int startinglevel) {
@@ -106,16 +106,16 @@ public class Game {
 		saveBoard();
 	
 		// DRAW THE WINDOW AND START THE MUSIC */
-		drawWindow();
+		draw();
 	}
 	
 	public void loadLevel(int level) {
 		
-		int row, col;
+		int r, c;
 	
-		for (row = 0; row <= (Define.boardRows - 1); row++)
-			for (col = 0; col <= (Define.boardCols - 1); col++)
-				board[row][col] = Levels.levelbank[level][row][col];
+		for (r = 0; r <= (Define.boardRows - 1); r++)
+			for (c = 0; c <= (Define.boardCols - 1); c++)
+				board[r][c] = Levels.levelbank[level][r][c];
 	}
 	
 	/* 
@@ -125,11 +125,13 @@ public class Game {
 	 */
 	public void saveBoard() {
 		
+		/*
 		int row, col;
 	
 		for (row = 0; row <= (Define.boardRows - 1); row++)
 			for (col = 0; col <= (Define.boardCols - 1); col++)
 				prevBoard[row][col] = board[row][col];
+				*/
 	}
 	
 	public void moveFurball(Direction givendir) {
@@ -212,7 +214,7 @@ public class Game {
 	
 			// UPDATE THE SCREEN AND RUN CHECKS ON THE NEW BOARD */
 			runChecks();
-			updateBoard();
+			draw();
 			return;
 	
 		}
@@ -233,7 +235,7 @@ public class Game {
 			board[brow][bcol] = Tile.dp;
 	
 			// UPDATE THE SCREEN AND COMPLETE THE LEVEL */
-			updateBoard();
+			draw();
 			finishedLevel();
 			return;
 		}
@@ -273,7 +275,7 @@ public class Game {
 	
 			// UPDATE THE SCREEN AND RUN CHECKS ON THE NEW BOARD */
 			runChecks();
-			updateBoard();
+			draw();
 			return;
 		}
 	}
@@ -431,9 +433,9 @@ public class Game {
 		return (board[row][col]);
 	}
 	
-	public Reaction getType(Tile giventile) {
+	public Reaction getType(Tile tile) {
 		
-		switch (giventile) {
+		switch (tile) {
 	
 			case rk:
 			case wl:
@@ -463,9 +465,9 @@ public class Game {
 		}
 	}
 	
-	public Danger getDanger(Tile giventile) {
+	public Danger getDanger(Tile tile) {
 		
-		switch (giventile) {
+		switch (tile) {
 	
 			case gs:
 			case sk:
@@ -496,7 +498,7 @@ public class Game {
 	public void killFurball() {
 		
 		// DISPLAY THE LETHAL BOARD */
-		updateBoard();
+		draw();
 	
 		// PLAY A SOUND EFFECT */
 		soundEffect(Sound.kill);
@@ -515,7 +517,7 @@ public class Game {
 		saveBoard();
 	
 		// DRAW THE WINDOW AND START THE MUSIC */
-		drawWindow();
+		draw();
 	}
 	
 	public void finishedLevel() {
@@ -539,34 +541,11 @@ public class Game {
 		saveBoard();
 	
 		// DRAW THE WINDOW AND START THE MUSIC */
-		drawWindow();
+		draw();
 	}
 	
-	public void drawBoard() {
-		
-		int row, col;
-		for (row = 0; row <= (Define.boardRows - 1); row++)
-			for (col = 0; col <= (Define.boardCols - 1); col++)
-				drawTile(board[row][col], col, row);
-	}
-	
-	public void drawWindow() {
-		
-		drawBoard();
-	}
-	
-	public void updateBoard() {
+	public void draw() {
 		
 		activity.updateBoard();
-		
-		/*
-		
-		int row, col;
-	
-		for (row = 0; row <= (Define.boardRows - 1); row++)
-			for (col = 0; col <= (Define.boardCols - 1); col++)
-				if (board[row][col] != prevBoard[row][col])
-					drawTile(board[row][col], col, row);
-					*/
 	}
 }

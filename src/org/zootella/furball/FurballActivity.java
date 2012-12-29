@@ -13,7 +13,6 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Color;
 import android.view.Menu;
 import android.view.MotionEvent;
 import android.view.View;
@@ -22,32 +21,86 @@ import android.widget.RelativeLayout;
 
 public class FurballActivity extends Activity {
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	@Override protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_furball);
 		
 		game = new Game(this);
-		game.initialize(Define.initialStartingLevel);
+	}
+	
+	@Override public void onWindowFocusChanged(boolean hasFocus) {
+		setupBoard();
+	}
+
+	@Override public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.activity_furball, menu);
+		return true;
+	}
+	
+	private class MyOnTouchListener implements View.OnTouchListener {
+		
+		@Override public boolean onTouch(View view, MotionEvent event) {
+		    final int action = event.getAction();
+		    switch (action) {
+		    
+			    case MotionEvent.ACTION_DOWN: {
+			        startx = (int)event.getX();//where the finger is now
+			        starty = (int)event.getY();
+			        break;
+			    }
+			        
+			    case MotionEvent.ACTION_MOVE: {
+			        int x = (int)event.getX();//where the finger is now
+			        int y = (int)event.getY();
+			        
+			        int dx = x - startx;
+			        int dy = y - starty;
+			        
+			        if (dx > square) {
+			        	startx = x;
+			        	starty = y;
+			        	game.moveFurball(Direction.right);
+			        }
+			        
+			        if (dx < -square) {
+			        	startx = x;
+			        	starty = y;
+			        	game.moveFurball(Direction.left);
+			        }
+			        
+			        if (dy > square) {
+			        	startx = x;
+			        	starty = y;
+			        	game.moveFurball(Direction.down);
+			        }
+			        
+			        if (dy < -square) {
+			        	startx = x;
+			        	starty = y;
+			        	game.moveFurball(Direction.up);
+			        }
+			        
+			        break;
+			    }
+		    }
+		    
+		    return true;
+		}
 	}
 	
 	private Game game;
-
 	private ImageView board[][];
 	private int square;
-	
-	private RelativeLayout layout;
-	
-	private int boardx, boardy;
-	
-	@Override
-	public void onWindowFocusChanged(boolean hasFocus) {
-		setupBoard();
-	}
+	private Map<Tile, Bitmap> imagesDay = new HashMap<Tile, Bitmap>();
+	private Map<Tile, Bitmap> imagesNight = new HashMap<Tile, Bitmap>();
+	public Tile screen[][] = new Tile[Define.boardRows][Define.boardCols];
+	private int startx;
+	private int starty;
 	
 	private void setupBoard() {
 		
-		if (board != null || layout != null) return;
+		if (board != null) return;
 		
 		//board
 		
@@ -56,8 +109,8 @@ public class FurballActivity extends Activity {
 		int h = layout.getHeight();//1097
 		
 		square = w / Define.boardCols;//size of each square
-		boardx = (w - (square * Define.boardCols)) / 2;
-		boardy = (h - (square * Define.boardRows)) / 2;
+		int boardx = (w - (square * Define.boardCols)) / 2;
+		int boardy = (h - (square * Define.boardRows)) / 2;
 		
 		board = new ImageView[Define.boardRows][Define.boardCols];
 		for (int r = 0; r < Define.boardRows; r++) {
@@ -80,53 +133,42 @@ public class FurballActivity extends Activity {
 			}
 		}
 		
-		//layout and puck
-		
-		layout = (RelativeLayout)findViewById(R.id.furball_activity_id);
-		
-		puck = new ImageView(this);
-		puck.setBackgroundColor(Color.BLUE);
-		RelativeLayout.LayoutParams p = new RelativeLayout.LayoutParams(square, square);//w, h
-		p.leftMargin = boardx;//x
-		p.topMargin = boardy;//y
-		layout.addView(puck, p);
+		//layout
 		
 		layout.setOnTouchListener(new MyOnTouchListener());
 		
 		//image resources
 		
-		images.put(Tile.fg, bitmap(R.drawable.fg));
-		images.put(Tile.fs, bitmap(R.drawable.fs));
-		images.put(Tile.bg, bitmap(R.drawable.bg));
-		images.put(Tile.bs, bitmap(R.drawable.bs));
-		images.put(Tile.rk, bitmap(R.drawable.rk));
-		images.put(Tile.wl, bitmap(R.drawable.wl));
-		images.put(Tile.en, bitmap(R.drawable.en));
-		images.put(Tile.gs, bitmap(R.drawable.gs));
-		images.put(Tile.sk, bitmap(R.drawable.sk));
-		images.put(Tile.hr, bitmap(R.drawable.hr));
-		images.put(Tile.dc, bitmap(R.drawable.dc));
-		images.put(Tile.dp, bitmap(R.drawable.dp));
+		imagesDay.put(Tile.fg, BitmapFactory.decodeResource(this.getResources(), R.drawable.fg));
+		imagesDay.put(Tile.fs, BitmapFactory.decodeResource(this.getResources(), R.drawable.fs));
+		imagesDay.put(Tile.bg, BitmapFactory.decodeResource(this.getResources(), R.drawable.bg));
+		imagesDay.put(Tile.bs, BitmapFactory.decodeResource(this.getResources(), R.drawable.bs));
+		imagesDay.put(Tile.rk, BitmapFactory.decodeResource(this.getResources(), R.drawable.rk));
+		imagesDay.put(Tile.wl, BitmapFactory.decodeResource(this.getResources(), R.drawable.wl));
+		imagesDay.put(Tile.en, BitmapFactory.decodeResource(this.getResources(), R.drawable.en));
+		imagesDay.put(Tile.gs, BitmapFactory.decodeResource(this.getResources(), R.drawable.gs));
+		imagesDay.put(Tile.sk, BitmapFactory.decodeResource(this.getResources(), R.drawable.sk));
+		imagesDay.put(Tile.hr, BitmapFactory.decodeResource(this.getResources(), R.drawable.hr));
+		imagesDay.put(Tile.dc, BitmapFactory.decodeResource(this.getResources(), R.drawable.dc));
+		imagesDay.put(Tile.dp, BitmapFactory.decodeResource(this.getResources(), R.drawable.dp));
 		
+		imagesNight.put(Tile.fg, BitmapFactory.decodeResource(this.getResources(), R.drawable.fgn));
+		imagesNight.put(Tile.fs, BitmapFactory.decodeResource(this.getResources(), R.drawable.fsn));
+		imagesNight.put(Tile.bg, BitmapFactory.decodeResource(this.getResources(), R.drawable.bgn));
+		imagesNight.put(Tile.bs, BitmapFactory.decodeResource(this.getResources(), R.drawable.bsn));
+		imagesNight.put(Tile.rk, BitmapFactory.decodeResource(this.getResources(), R.drawable.rkn));
+		imagesNight.put(Tile.wl, BitmapFactory.decodeResource(this.getResources(), R.drawable.wln));
+		imagesNight.put(Tile.en, BitmapFactory.decodeResource(this.getResources(), R.drawable.enn));
+		imagesNight.put(Tile.gs, BitmapFactory.decodeResource(this.getResources(), R.drawable.gsn));
+		imagesNight.put(Tile.sk, BitmapFactory.decodeResource(this.getResources(), R.drawable.skn));
+		imagesNight.put(Tile.hr, BitmapFactory.decodeResource(this.getResources(), R.drawable.hrn));
+		imagesNight.put(Tile.dc, BitmapFactory.decodeResource(this.getResources(), R.drawable.dcn));
+		imagesNight.put(Tile.dp, BitmapFactory.decodeResource(this.getResources(), R.drawable.dpn));
+
 		//update
 		
 		updateBoard();
 	}
-	
-	private Map<Tile, Bitmap> images = new HashMap<Tile, Bitmap>();
-	
-	
-	
-	private Bitmap bitmap(int id) {
-		return BitmapFactory.decodeResource(this.getResources(), id);
-	}
-	
-	public Tile screen[][] = new Tile[Define.boardRows][Define.boardCols];
-	
-	private FurballActivity instance;
-	
-	public FurballActivity instance() { return instance; }
-	
 	
 	public void updateBoard() {
 		
@@ -136,99 +178,9 @@ public class FurballActivity extends Activity {
 				if (screen[r][c] != game.board[r][c]) {
 					
 					screen[r][c] = game.board[r][c];
-
-					
-					
-					
-					
-					board[r][c].setImageBitmap(images.get(screen[r][c]));
-					
+					board[r][c].setImageBitmap(imagesDay.get(screen[r][c]));
 				}
 			}
 		}
 	}
-	
-	private class MyOnTouchListener implements View.OnTouchListener {
-		
-		@Override
-		public boolean onTouch(View view, MotionEvent event) {
-		    final int action = event.getAction();
-		    switch (action) {
-			    case MotionEvent.ACTION_DOWN: {
-			        startx = (int)event.getX();//where the finger is now
-			        starty = (int)event.getY();
-			        break;
-			    }
-			        
-			    case MotionEvent.ACTION_MOVE: {
-			        int x = (int)event.getX();//where the finger is now
-			        int y = (int)event.getY();
-			        
-			        int dx = x - startx;
-			        int dy = y - starty;
-			        
-			        if (dx > square) {
-			        	startx = x;
-			        	starty = y;
-			        	move(puckx + 1, pucky);//right
-			        	game.moveFurball(Direction.right);
-			        }
-			        
-			        if (dx < -square) {
-			        	startx = x;
-			        	starty = y;
-			        	move(puckx - 1, pucky);//left
-			        	game.moveFurball(Direction.left);
-			        }
-			        
-			        if (dy > square) {
-			        	startx = x;
-			        	starty = y;
-			        	move(puckx, pucky + 1);//down
-			        	game.moveFurball(Direction.down);
-			        }
-			        
-			        if (dy < -square) {
-			        	startx = x;
-			        	starty = y;
-			        	move(puckx, pucky - 1);//up
-			        	game.moveFurball(Direction.up);
-			        }
-			        
-			        break;
-			    }
-		    }
-		    
-		    return true;
-		}
-	}
-
-	//move the puck to x, y in board coordinates, and record where it is
-	private void move(int x, int y) {
-		puckx = x;
-		pucky = y;
-		
-		RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams)puck.getLayoutParams();
-        params.leftMargin = boardx + (square * puckx);
-        params.topMargin = boardy + (square * pucky);
-        params.rightMargin = square;
-        params.bottomMargin = square;
-        puck.setLayoutParams(params);
-	}
-
-	private int startx;
-	private int starty;
-	
-	private int puckx;
-	private int pucky;
-	
-	private ImageView puck;
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.activity_furball, menu);
-		return true;
-	}
-
 }
