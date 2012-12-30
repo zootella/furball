@@ -171,6 +171,7 @@ public class FurballActivity extends Activity {
 	}
 	
 	public void updateBoard() {
+		if (board == null) return;
 		
 		for (int r = 0; r < Define.boardRows; r++) {
 			for (int c = 0; c < Define.boardCols; c++) {
