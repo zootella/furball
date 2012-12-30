@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     tools:context=".FurballActivity"
     android:id="@+id/furball_activity_id"
+    android:background="#000000"
     >
 
 </RelativeLayout>

@@ -92,7 +92,6 @@ public class Game {
 	}
 	
 	public Tile board[][] = new Tile[Define.boardRows][Define.boardCols];
-//	public Tile prevBoard[][] = new Tile[Define.boardRows][Define.boardCols];
 	public int currentLevel, lives;
 	
 	public void initialize(int startinglevel) {
@@ -103,7 +102,6 @@ public class Game {
 	
 		// SETUP THE BOARD AND PREVIOUSBOARD ARRAYS */
 		loadLevel(currentLevel);
-		saveBoard();
 	
 		// DRAW THE WINDOW AND START THE MUSIC */
 		draw();
@@ -116,22 +114,6 @@ public class Game {
 		for (r = 0; r <= (Define.boardRows - 1); r++)
 			for (c = 0; c <= (Define.boardCols - 1); c++)
 				board[r][c] = Levels.levelbank[level][r][c];
-	}
-	
-	/* 
-	 * This function has the job of copying all of the information 
-	 * from the board array into the prevboard array.  There are no 
-	 * arguments or a return value.
-	 */
-	public void saveBoard() {
-		
-		/*
-		int row, col;
-	
-		for (row = 0; row <= (Define.boardRows - 1); row++)
-			for (col = 0; col <= (Define.boardCols - 1); col++)
-				prevBoard[row][col] = board[row][col];
-				*/
 	}
 	
 	public void moveFurball(Direction givendir) {
@@ -195,7 +177,6 @@ public class Game {
 		if (btype == Reaction.passing) {
 	
 			// BACKUP THE BOARD BEFORE CHANGING IT */
-			saveBoard();
 	
 			// PLAY A SOUND EFFECT IF APPROPRIATE */
 			if (btile == Tile.hr)
@@ -223,7 +204,6 @@ public class Game {
 		if (btype == Reaction.finishing) {
 	
 			// BACKUP THE BOARD BEFORE CHANGING IT */
-			saveBoard();
 	
 			// MAKE THE MOVE */
 			if (atile == Tile.fg)
@@ -248,7 +228,6 @@ public class Game {
 				return;  // THE MOVE IS NOT POSSIBLE, DO NOTHING
 	
 			// BACKUP THE BOARD BEFORE CHANGING IT */
-			saveBoard();
 			
 			// PLAY A SOUND EFFECT IF APPROPRIATE */
 			if (ctile == Tile.hr)
@@ -514,7 +493,6 @@ public class Game {
 	
 		// RESET AND RESTART THE CURRENT LEVEL */
 		loadLevel(currentLevel);
-		saveBoard();
 	
 		// DRAW THE WINDOW AND START THE MUSIC */
 		draw();
@@ -538,7 +516,6 @@ public class Game {
 	
 		// SETUP THE NEXT LEVEL */
 		loadLevel(currentLevel);
-		saveBoard();
 	
 		// DRAW THE WINDOW AND START THE MUSIC */
 		draw();
