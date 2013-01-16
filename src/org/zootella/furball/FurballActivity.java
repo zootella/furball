@@ -14,6 +14,7 @@ import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
@@ -36,6 +37,25 @@ public class FurballActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.activity_furball, menu);
 		return true;
+	}
+	
+	@Override public boolean onOptionsItemSelected(MenuItem item) {
+	    switch (item.getItemId()) {
+	    	case R.id.menu_new_game:
+	    		return true;
+	    	case R.id.menu_give_up:
+	    		return true;
+	    	case R.id.menu_enter_level_code:
+	    		return true;
+	    	case R.id.menu_sound_effects:
+	    		return true;
+	    	case R.id.menu_quick_help:
+	    		return true;
+	    	case R.id.menu_about:
+	    		return true;
+	        default:
+	            return super.onOptionsItemSelected(item);
+	    }
 	}
 	
 	private class MyOnTouchListener implements View.OnTouchListener {

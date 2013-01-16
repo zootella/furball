@@ -1,9 +1,34 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item
-        android:id="@+id/menu_settings"
+        android:id="@+id/menu_new_game"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/menu_settings"/>
-
+        android:title="@string/menu_new_game"/>
+    <item
+        android:id="@+id/menu_give_up"
+        android:orderInCategory="200"
+        android:showAsAction="never"
+        android:title="@string/menu_give_up"/>
+    <item
+        android:id="@+id/menu_enter_level_code"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/menu_enter_level_code"/>
+    <item
+        android:id="@+id/menu_sound_effects"
+        android:orderInCategory="400"
+        android:showAsAction="never"
+        android:title="@string/menu_sound_effects"/>
+    <item
+        android:id="@+id/menu_quick_help"
+        android:orderInCategory="500"
+        android:showAsAction="never"
+        android:title="@string/menu_quick_help"/>
+    <item
+        android:id="@+id/menu_about"
+        android:orderInCategory="600"
+        android:showAsAction="never"
+        android:title="@string/menu_about"/>
+    
 </menu>
